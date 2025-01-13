@@ -1,0 +1,1726 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 143 | Scripts: 13 | Modules: 0 | Tags: 0
+local Encton = {};
+
+-- StarterGui.Encton
+Encton["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+Encton["1"]["Name"] = [[Encton]];
+Encton["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.Encton.Main
+Encton["2"] = Instance.new("Frame", Encton["1"]);
+Encton["2"]["BorderSizePixel"] = 0;
+Encton["2"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["2"]["Size"] = UDim2.new(0, 498, 0, 326);
+Encton["2"]["Position"] = UDim2.new(0.30509, 0, 0.21558, 0);
+Encton["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["2"]["Name"] = [[Main]];
+
+
+-- StarterGui.Encton.Main.Decor1
+Encton["3"] = Instance.new("Frame", Encton["2"]);
+Encton["3"]["BorderSizePixel"] = 0;
+Encton["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["3"]["Size"] = UDim2.new(0, 471, 0, 4);
+Encton["3"]["Position"] = UDim2.new(0.0261, 0, 0.13497, 0);
+Encton["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["3"]["Name"] = [[Decor1]];
+Encton["3"]["BackgroundTransparency"] = 0.9;
+
+
+-- StarterGui.Encton.Main.Decor1.UICorner
+Encton["4"] = Instance.new("UICorner", Encton["3"]);
+
+
+
+-- StarterGui.Encton.Main.UICorner
+Encton["5"] = Instance.new("UICorner", Encton["2"]);
+
+
+
+-- StarterGui.Encton.Main.title
+Encton["6"] = Instance.new("TextLabel", Encton["2"]);
+Encton["6"]["TextWrapped"] = true;
+Encton["6"]["BorderSizePixel"] = 0;
+Encton["6"]["TextSize"] = 14;
+Encton["6"]["TextScaled"] = true;
+Encton["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["6"]["BackgroundTransparency"] = 1;
+Encton["6"]["Size"] = UDim2.new(0, 106, 0, 22);
+Encton["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["6"]["Text"] = [[Encton]];
+Encton["6"]["Name"] = [[title]];
+Encton["6"]["Position"] = UDim2.new(0.0261, 0, 0.03681, 0);
+
+
+-- StarterGui.Encton.Main.version
+Encton["7"] = Instance.new("TextLabel", Encton["2"]);
+Encton["7"]["TextWrapped"] = true;
+Encton["7"]["BorderSizePixel"] = 0;
+Encton["7"]["TextSize"] = 14;
+Encton["7"]["TextTransparency"] = 0.9;
+Encton["7"]["TextScaled"] = true;
+Encton["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7"]["BackgroundTransparency"] = 1;
+Encton["7"]["Size"] = UDim2.new(0, 30, 0, 12);
+Encton["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["7"]["Text"] = [[V0.1]];
+Encton["7"]["Name"] = [[version]];
+
+
+-- StarterGui.Encton.Main.Decor2
+Encton["8"] = Instance.new("Frame", Encton["2"]);
+Encton["8"]["BorderSizePixel"] = 0;
+Encton["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["8"]["Size"] = UDim2.new(0, 4, 0, 278);
+Encton["8"]["Position"] = UDim2.new(0.31928, 0, 0.14724, 0);
+Encton["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["8"]["Name"] = [[Decor2]];
+Encton["8"]["BackgroundTransparency"] = 0.9;
+
+
+-- StarterGui.Encton.Main.Decor2.UICorner
+Encton["9"] = Instance.new("UICorner", Encton["8"]);
+
+
+
+-- StarterGui.Encton.Main.Home
+Encton["a"] = Instance.new("TextButton", Encton["2"]);
+Encton["a"]["TextWrapped"] = true;
+Encton["a"]["BorderSizePixel"] = 0;
+Encton["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["a"]["TextSize"] = 17;
+Encton["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["a"]["Size"] = UDim2.new(0, 137, 0, 44);
+Encton["a"]["BackgroundTransparency"] = 0.9;
+Encton["a"]["Name"] = [[Home]];
+Encton["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["a"]["Text"] = [[Home]];
+Encton["a"]["Position"] = UDim2.new(0.0261, 0, 0.18405, 0);
+
+
+-- StarterGui.Encton.Main.Home.UICorner
+Encton["b"] = Instance.new("UICorner", Encton["a"]);
+
+
+
+-- StarterGui.Encton.Main.homeimage
+Encton["c"] = Instance.new("ImageLabel", Encton["2"]);
+Encton["c"]["BorderSizePixel"] = 0;
+Encton["c"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+Encton["c"]["Image"] = [[rbxassetid://13587639638]];
+Encton["c"]["Size"] = UDim2.new(0, 22, 0, 24);
+Encton["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["c"]["BackgroundTransparency"] = 0.5;
+Encton["c"]["Name"] = [[homeimage]];
+Encton["c"]["Position"] = UDim2.new(0.04016, 0, 0.21472, 0);
+
+
+-- StarterGui.Encton.Main.homeimage.UIStroke
+Encton["d"] = Instance.new("UIStroke", Encton["c"]);
+Encton["d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["d"]["Color"] = Color3.fromRGB(62, 62, 62);
+
+
+-- StarterGui.Encton.Main.homeimage.UICorner
+Encton["e"] = Instance.new("UICorner", Encton["c"]);
+
+
+
+-- StarterGui.Encton.Main.Executor
+Encton["f"] = Instance.new("TextButton", Encton["2"]);
+Encton["f"]["TextWrapped"] = true;
+Encton["f"]["BorderSizePixel"] = 0;
+Encton["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["f"]["TextSize"] = 17;
+Encton["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["f"]["Size"] = UDim2.new(0, 137, 0, 44);
+Encton["f"]["BackgroundTransparency"] = 1;
+Encton["f"]["Name"] = [[Executor]];
+Encton["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["f"]["Text"] = [[Executor]];
+Encton["f"]["Position"] = UDim2.new(0.0261, 0, 0.36503, 0);
+
+
+-- StarterGui.Encton.Main.Executor.textfix
+Encton["10"] = Instance.new("UIPadding", Encton["f"]);
+Encton["10"]["Name"] = [[textfix]];
+Encton["10"]["PaddingLeft"] = UDim.new(0, 10);
+
+
+-- StarterGui.Encton.Main.Executor.UICorner
+Encton["11"] = Instance.new("UICorner", Encton["f"]);
+
+
+
+-- StarterGui.Encton.Main.executorimage
+Encton["12"] = Instance.new("ImageLabel", Encton["2"]);
+Encton["12"]["BorderSizePixel"] = 0;
+Encton["12"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+Encton["12"]["Image"] = [[rbxassetid://9063769687]];
+Encton["12"]["Size"] = UDim2.new(0, 22, 0, 24);
+Encton["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["12"]["BackgroundTransparency"] = 0.5;
+Encton["12"]["Name"] = [[executorimage]];
+Encton["12"]["Position"] = UDim2.new(0.04016, 0, 0.39571, 0);
+
+
+-- StarterGui.Encton.Main.executorimage.UIStroke
+Encton["13"] = Instance.new("UIStroke", Encton["12"]);
+Encton["13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["13"]["Color"] = Color3.fromRGB(62, 62, 62);
+
+
+-- StarterGui.Encton.Main.executorimage.UICorner
+Encton["14"] = Instance.new("UICorner", Encton["12"]);
+
+
+
+-- StarterGui.Encton.Main.cloudimage
+Encton["15"] = Instance.new("ImageLabel", Encton["2"]);
+Encton["15"]["BorderSizePixel"] = 0;
+Encton["15"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+Encton["15"]["Image"] = [[rbxassetid://13588228646]];
+Encton["15"]["Size"] = UDim2.new(0, 22, 0, 24);
+Encton["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["15"]["BackgroundTransparency"] = 0.5;
+Encton["15"]["Name"] = [[cloudimage]];
+Encton["15"]["Position"] = UDim2.new(0.04016, 0, 0.57975, 0);
+
+
+-- StarterGui.Encton.Main.cloudimage.UIStroke
+Encton["16"] = Instance.new("UIStroke", Encton["15"]);
+Encton["16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["16"]["Color"] = Color3.fromRGB(62, 62, 62);
+
+
+-- StarterGui.Encton.Main.cloudimage.UICorner
+Encton["17"] = Instance.new("UICorner", Encton["15"]);
+
+
+
+-- StarterGui.Encton.Main.Cloud
+Encton["18"] = Instance.new("TextButton", Encton["2"]);
+Encton["18"]["TextWrapped"] = true;
+Encton["18"]["BorderSizePixel"] = 0;
+Encton["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["18"]["TextSize"] = 17;
+Encton["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["18"]["Size"] = UDim2.new(0, 137, 0, 44);
+Encton["18"]["BackgroundTransparency"] = 1;
+Encton["18"]["Name"] = [[Cloud]];
+Encton["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["18"]["Text"] = [[Cloud]];
+Encton["18"]["Position"] = UDim2.new(0.0261, 0, 0.54908, 0);
+
+
+-- StarterGui.Encton.Main.Cloud.UICorner
+Encton["19"] = Instance.new("UICorner", Encton["18"]);
+
+
+
+-- StarterGui.Encton.Main.Settings
+Encton["1a"] = Instance.new("TextButton", Encton["2"]);
+Encton["1a"]["TextWrapped"] = true;
+Encton["1a"]["BorderSizePixel"] = 0;
+Encton["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["1a"]["TextSize"] = 17;
+Encton["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["1a"]["Size"] = UDim2.new(0, 137, 0, 44);
+Encton["1a"]["BackgroundTransparency"] = 1;
+Encton["1a"]["Name"] = [[Settings]];
+Encton["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["1a"]["Text"] = [[Settings]];
+Encton["1a"]["Position"] = UDim2.new(0.0261, 0, 0.80982, 0);
+
+
+-- StarterGui.Encton.Main.Settings.textfix
+Encton["1b"] = Instance.new("UIPadding", Encton["1a"]);
+Encton["1b"]["Name"] = [[textfix]];
+Encton["1b"]["PaddingLeft"] = UDim.new(0, 10);
+
+
+-- StarterGui.Encton.Main.Settings.UICorner
+Encton["1c"] = Instance.new("UICorner", Encton["1a"]);
+
+
+
+-- StarterGui.Encton.Main.settingsimage
+Encton["1d"] = Instance.new("ImageLabel", Encton["2"]);
+Encton["1d"]["BorderSizePixel"] = 0;
+Encton["1d"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+Encton["1d"]["Image"] = [[rbxassetid://13403501059]];
+Encton["1d"]["Size"] = UDim2.new(0, 22, 0, 24);
+Encton["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["1d"]["BackgroundTransparency"] = 0.5;
+Encton["1d"]["Name"] = [[settingsimage]];
+Encton["1d"]["Position"] = UDim2.new(0.04016, 0, 0.84049, 0);
+
+
+-- StarterGui.Encton.Main.settingsimage.UIStroke
+Encton["1e"] = Instance.new("UIStroke", Encton["1d"]);
+Encton["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["1e"]["Color"] = Color3.fromRGB(62, 62, 62);
+
+
+-- StarterGui.Encton.Main.settingsimage.UICorner
+Encton["1f"] = Instance.new("UICorner", Encton["1d"]);
+
+
+
+-- StarterGui.Encton.Main.DragScript
+Encton["20"] = Instance.new("LocalScript", Encton["2"]);
+Encton["20"]["Name"] = [[DragScript]];
+
+
+-- StarterGui.Encton.Main.HomeFrame
+Encton["21"] = Instance.new("Frame", Encton["2"]);
+Encton["21"]["BorderSizePixel"] = 0;
+Encton["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["21"]["Size"] = UDim2.new(0, 315, 0, 248);
+Encton["21"]["Position"] = UDim2.new(0.35141, 0, 0.18405, 0);
+Encton["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["21"]["Name"] = [[HomeFrame]];
+Encton["21"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Encton.Main.HomeFrame.GreetPart
+Encton["22"] = Instance.new("Frame", Encton["21"]);
+Encton["22"]["BorderSizePixel"] = 0;
+Encton["22"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["22"]["Size"] = UDim2.new(0, 149, 0, 56);
+Encton["22"]["Position"] = UDim2.new(-0.00317, 0, 0.0121, 0);
+Encton["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["22"]["Name"] = [[GreetPart]];
+
+
+-- StarterGui.Encton.Main.HomeFrame.GreetPart.UIStroke
+Encton["23"] = Instance.new("UIStroke", Encton["22"]);
+Encton["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["23"]["Thickness"] = 1.5;
+Encton["23"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.Encton.Main.HomeFrame.GreetPart.UICorner
+Encton["24"] = Instance.new("UICorner", Encton["22"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.GreetPart.nameandrank
+Encton["25"] = Instance.new("TextLabel", Encton["22"]);
+Encton["25"]["TextWrapped"] = true;
+Encton["25"]["BorderSizePixel"] = 0;
+Encton["25"]["TextSize"] = 20;
+Encton["25"]["TextScaled"] = true;
+Encton["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["25"]["BackgroundTransparency"] = 1;
+Encton["25"]["Size"] = UDim2.new(0, 131, 0, 43);
+Encton["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["25"]["Text"] = [[Greetings, Player!\nRank:Guest]];
+Encton["25"]["Name"] = [[nameandrank]];
+Encton["25"]["Position"] = UDim2.new(0.0604, 0, 0.125, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.GreetPart.nameandrank.LocalScript
+Encton["26"] = Instance.new("LocalScript", Encton["25"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo
+Encton["27"] = Instance.new("Frame", Encton["21"]);
+Encton["27"]["BorderSizePixel"] = 0;
+Encton["27"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["27"]["Size"] = UDim2.new(0, 149, 0, 56);
+Encton["27"]["Position"] = UDim2.new(0.50794, 0, 0.0121, 0);
+Encton["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["27"]["Name"] = [[KeyInfo]];
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.UIStroke
+Encton["28"] = Instance.new("UIStroke", Encton["27"]);
+Encton["28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["28"]["Thickness"] = 1.5;
+Encton["28"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.UICorner
+Encton["29"] = Instance.new("UICorner", Encton["27"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.keytime
+Encton["2a"] = Instance.new("TextLabel", Encton["27"]);
+Encton["2a"]["TextWrapped"] = true;
+Encton["2a"]["BorderSizePixel"] = 0;
+Encton["2a"]["TextSize"] = 20;
+Encton["2a"]["TextScaled"] = true;
+Encton["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["2a"]["BackgroundTransparency"] = 1;
+Encton["2a"]["Size"] = UDim2.new(0, 131, 0, 18);
+Encton["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["2a"]["Text"] = [[Key Expires in: nan]];
+Encton["2a"]["Name"] = [[keytime]];
+Encton["2a"]["Position"] = UDim2.new(0.0604, 0, 0.125, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.Bar
+Encton["2b"] = Instance.new("Frame", Encton["27"]);
+Encton["2b"]["BorderSizePixel"] = 0;
+Encton["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["2b"]["Size"] = UDim2.new(0, 131, 0, 10);
+Encton["2b"]["Position"] = UDim2.new(0.0604, 0, 0.55357, 0);
+Encton["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["2b"]["Name"] = [[Bar]];
+Encton["2b"]["BackgroundTransparency"] = 0.9;
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.Bar.UICorner
+Encton["2c"] = Instance.new("UICorner", Encton["2b"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.LoadBar
+Encton["2d"] = Instance.new("Frame", Encton["27"]);
+Encton["2d"]["BorderSizePixel"] = 0;
+Encton["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["2d"]["Size"] = UDim2.new(0, 95, 0, 10);
+Encton["2d"]["Position"] = UDim2.new(0.0604, 0, 0.55357, 0);
+Encton["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["2d"]["Name"] = [[LoadBar]];
+Encton["2d"]["BackgroundTransparency"] = 0.9;
+
+
+-- StarterGui.Encton.Main.HomeFrame.KeyInfo.LoadBar.UICorner
+Encton["2e"] = Instance.new("UICorner", Encton["2d"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts
+Encton["2f"] = Instance.new("Frame", Encton["21"]);
+Encton["2f"]["BorderSizePixel"] = 0;
+Encton["2f"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["2f"]["Size"] = UDim2.new(0, 310, 0, 109);
+Encton["2f"]["Position"] = UDim2.new(-0.00317, 0, 0.33871, 0);
+Encton["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["2f"]["Name"] = [[SavedScripts]];
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.UIStroke
+Encton["30"] = Instance.new("UIStroke", Encton["2f"]);
+Encton["30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["30"]["Thickness"] = 1.5;
+Encton["30"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.UICorner
+Encton["31"] = Instance.new("UICorner", Encton["2f"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.title
+Encton["32"] = Instance.new("TextLabel", Encton["2f"]);
+Encton["32"]["TextWrapped"] = true;
+Encton["32"]["BorderSizePixel"] = 0;
+Encton["32"]["TextSize"] = 20;
+Encton["32"]["TextScaled"] = true;
+Encton["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["32"]["BackgroundTransparency"] = 1;
+Encton["32"]["Size"] = UDim2.new(0, 113, 0, 15);
+Encton["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["32"]["Text"] = [[Saved Scripts]];
+Encton["32"]["Name"] = [[title]];
+Encton["32"]["Position"] = UDim2.new(-0.035, 0, -0.18, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll
+Encton["33"] = Instance.new("ScrollingFrame", Encton["2f"]);
+Encton["33"]["Active"] = true;
+Encton["33"]["BorderSizePixel"] = 0;
+Encton["33"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+Encton["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["33"]["Name"] = [[scroll]];
+Encton["33"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+Encton["33"]["Size"] = UDim2.new(0, 310, 0, 109);
+Encton["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["33"]["ScrollBarThickness"] = 0;
+Encton["33"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template
+Encton["34"] = Instance.new("Folder", Encton["33"]);
+Encton["34"]["Name"] = [[Template]];
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved
+Encton["35"] = Instance.new("Frame", Encton["34"]);
+Encton["35"]["Visible"] = false;
+Encton["35"]["BorderSizePixel"] = 0;
+Encton["35"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["35"]["Size"] = UDim2.new(0, 292, 0, 78);
+Encton["35"]["Position"] = UDim2.new(0, 0, 0.08257, 0);
+Encton["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["35"]["Name"] = [[NameSaved]];
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.UICorner
+Encton["36"] = Instance.new("UICorner", Encton["35"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.scriptName
+Encton["37"] = Instance.new("TextLabel", Encton["35"]);
+Encton["37"]["TextWrapped"] = true;
+Encton["37"]["BorderSizePixel"] = 0;
+Encton["37"]["TextSize"] = 14;
+Encton["37"]["TextScaled"] = true;
+Encton["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["37"]["BackgroundTransparency"] = 1;
+Encton["37"]["Size"] = UDim2.new(0, 140, 0, 20);
+Encton["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["37"]["Text"] = [[Script Name]];
+Encton["37"]["Name"] = [[scriptName]];
+Encton["37"]["Position"] = UDim2.new(0.26191, 0, 0.10345, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Execute
+Encton["38"] = Instance.new("TextButton", Encton["35"]);
+Encton["38"]["BorderSizePixel"] = 0;
+Encton["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["38"]["TextSize"] = 14;
+Encton["38"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["38"]["Size"] = UDim2.new(0, 131, 0, 24);
+Encton["38"]["Name"] = [[Execute]];
+Encton["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["38"]["Text"] = [[Execute]];
+Encton["38"]["Position"] = UDim2.new(0.0274, 0, 0.57692, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Execute.UICorner
+Encton["39"] = Instance.new("UICorner", Encton["38"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Execute.UIStroke
+Encton["3a"] = Instance.new("UIStroke", Encton["38"]);
+Encton["3a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["3a"]["Thickness"] = 1.3;
+Encton["3a"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Delete
+Encton["3b"] = Instance.new("TextButton", Encton["35"]);
+Encton["3b"]["BorderSizePixel"] = 0;
+Encton["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["3b"]["TextSize"] = 14;
+Encton["3b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["3b"]["Size"] = UDim2.new(0, 131, 0, 24);
+Encton["3b"]["Name"] = [[Delete]];
+Encton["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["3b"]["Text"] = [[Delete]];
+Encton["3b"]["Position"] = UDim2.new(0.51027, 0, 0.57692, 0);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Delete.UICorner
+Encton["3c"] = Instance.new("UICorner", Encton["3b"]);
+
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.Delete.UIStroke
+Encton["3d"] = Instance.new("UIStroke", Encton["3b"]);
+Encton["3d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["3d"]["Thickness"] = 1.3;
+Encton["3d"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.Template.NameSaved.UIStroke
+Encton["3e"] = Instance.new("UIStroke", Encton["35"]);
+Encton["3e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["3e"]["Thickness"] = 2.5;
+Encton["3e"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.UIListLayout
+Encton["3f"] = Instance.new("UIListLayout", Encton["33"]);
+Encton["3f"]["Padding"] = UDim.new(0, 10);
+Encton["3f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Encton.Main.HomeFrame.SavedScripts.scroll.UIPadding
+Encton["40"] = Instance.new("UIPadding", Encton["33"]);
+Encton["40"]["PaddingTop"] = UDim.new(0, 10);
+Encton["40"]["PaddingLeft"] = UDim.new(0, 8);
+
+
+-- StarterGui.Encton.Main.HomeFrame.note
+Encton["41"] = Instance.new("TextLabel", Encton["21"]);
+Encton["41"]["TextWrapped"] = true;
+Encton["41"]["BorderSizePixel"] = 0;
+Encton["41"]["TextSize"] = 20;
+Encton["41"]["TextTransparency"] = 0.8;
+Encton["41"]["TextScaled"] = true;
+Encton["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["41"]["BackgroundTransparency"] = 1;
+Encton["41"]["Size"] = UDim2.new(0, 292, 0, 43);
+Encton["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["41"]["Text"] = [[NOTE: this executor is only made for fun. We allow that other players can copy our image ids. But not share publicly with a renamed name with the same gui.]];
+Encton["41"]["Name"] = [[note]];
+Encton["41"]["Position"] = UDim2.new(0.02532, 0, 0.8629, 0);
+
+
+-- StarterGui.Encton.Main.CloudFrame
+Encton["42"] = Instance.new("Frame", Encton["2"]);
+Encton["42"]["Visible"] = false;
+Encton["42"]["BorderSizePixel"] = 0;
+Encton["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["42"]["Size"] = UDim2.new(0, 315, 0, 248);
+Encton["42"]["Position"] = UDim2.new(0.33936, 0, 0.18405, 0);
+Encton["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["42"]["Name"] = [[CloudFrame]];
+Encton["42"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Encton.Main.CloudFrame.Input
+Encton["43"] = Instance.new("TextBox", Encton["42"]);
+Encton["43"]["CursorPosition"] = -1;
+Encton["43"]["Name"] = [[Input]];
+Encton["43"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+Encton["43"]["BorderSizePixel"] = 0;
+Encton["43"]["TextSize"] = 14;
+Encton["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["43"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["43"]["PlaceholderText"] = [[What would you like to search?]];
+Encton["43"]["Size"] = UDim2.new(0, 209, 0, 25);
+Encton["43"]["Position"] = UDim2.new(0.03175, 0, 0.03629, 0);
+Encton["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["43"]["Text"] = [[]];
+
+
+-- StarterGui.Encton.Main.CloudFrame.Input.UICorner
+Encton["44"] = Instance.new("UICorner", Encton["43"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.Input.UIStroke
+Encton["45"] = Instance.new("UIStroke", Encton["43"]);
+Encton["45"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["45"]["Thickness"] = 2.5;
+Encton["45"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.Input.UIPadding
+Encton["46"] = Instance.new("UIPadding", Encton["43"]);
+Encton["46"]["PaddingLeft"] = UDim.new(0, 5);
+
+
+-- StarterGui.Encton.Main.CloudFrame.SearchBtn
+Encton["47"] = Instance.new("TextButton", Encton["42"]);
+Encton["47"]["TextWrapped"] = true;
+Encton["47"]["BorderSizePixel"] = 0;
+Encton["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["47"]["TextSize"] = 20;
+Encton["47"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["47"]["Size"] = UDim2.new(0, 81, 0, 25);
+Encton["47"]["Name"] = [[SearchBtn]];
+Encton["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["47"]["Text"] = [[Search]];
+Encton["47"]["Position"] = UDim2.new(0.74286, 0, 0.03629, 0);
+
+
+-- StarterGui.Encton.Main.CloudFrame.SearchBtn.UIStroke
+Encton["48"] = Instance.new("UIStroke", Encton["47"]);
+Encton["48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["48"]["Thickness"] = 2.5;
+Encton["48"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.SearchBtn.UICorner
+Encton["49"] = Instance.new("UICorner", Encton["47"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.SearchBtn.LocalScript
+Encton["4a"] = Instance.new("LocalScript", Encton["47"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud
+Encton["4b"] = Instance.new("ScrollingFrame", Encton["42"]);
+Encton["4b"]["Active"] = true;
+Encton["4b"]["BorderSizePixel"] = 0;
+Encton["4b"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+Encton["4b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["4b"]["Name"] = [[scrollcloud]];
+Encton["4b"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+Encton["4b"]["Size"] = UDim2.new(0, 305, 0, 202);
+Encton["4b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["4b"]["Position"] = UDim2.new(0.03175, 0, 0.21371, 0);
+Encton["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["4b"]["ScrollBarThickness"] = 0;
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.UIStroke
+Encton["4c"] = Instance.new("UIStroke", Encton["4b"]);
+Encton["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["4c"]["Thickness"] = 2.5;
+Encton["4c"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.UICorner
+Encton["4d"] = Instance.new("UICorner", Encton["4b"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.UIListLayout
+Encton["4e"] = Instance.new("UIListLayout", Encton["4b"]);
+Encton["4e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template
+Encton["4f"] = Instance.new("Folder", Encton["4b"]);
+Encton["4f"]["Name"] = [[Template]];
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript
+Encton["50"] = Instance.new("Frame", Encton["4f"]);
+Encton["50"]["Visible"] = false;
+Encton["50"]["BorderSizePixel"] = 0;
+Encton["50"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["50"]["Size"] = UDim2.new(0, 289, 0, 100);
+Encton["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["50"]["Name"] = [[FoundedScript]];
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.UIStroke
+Encton["51"] = Instance.new("UIStroke", Encton["50"]);
+Encton["51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["51"]["Thickness"] = 2.5;
+Encton["51"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.UICorner
+Encton["52"] = Instance.new("UICorner", Encton["50"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.scname
+Encton["53"] = Instance.new("TextLabel", Encton["50"]);
+Encton["53"]["TextWrapped"] = true;
+Encton["53"]["BorderSizePixel"] = 0;
+Encton["53"]["TextSize"] = 15;
+Encton["53"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+Encton["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["53"]["BackgroundTransparency"] = 1;
+Encton["53"]["Size"] = UDim2.new(0, 174, 0, 31);
+Encton["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["53"]["Text"] = [[Script Name]];
+Encton["53"]["Name"] = [[scname]];
+Encton["53"]["Position"] = UDim2.new(0.34602, 0, 0.09, 0);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.scimage
+Encton["54"] = Instance.new("ImageLabel", Encton["50"]);
+Encton["54"]["BorderSizePixel"] = 0;
+Encton["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["54"]["Image"] = [[rbxassetid://11886780412]];
+Encton["54"]["Size"] = UDim2.new(0, 100, 0, 100);
+Encton["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["54"]["Name"] = [[scimage]];
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.scimage.UICorner
+Encton["55"] = Instance.new("UICorner", Encton["54"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Execute
+Encton["56"] = Instance.new("TextButton", Encton["50"]);
+Encton["56"]["BorderSizePixel"] = 0;
+Encton["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["56"]["TextSize"] = 14;
+Encton["56"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["56"]["Size"] = UDim2.new(0, 95, 0, 28);
+Encton["56"]["Name"] = [[Execute]];
+Encton["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["56"]["Text"] = [[Execute]];
+Encton["56"]["Position"] = UDim2.new(0.38754, 0, 0.66, 0);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Execute.UIStroke
+Encton["57"] = Instance.new("UIStroke", Encton["56"]);
+Encton["57"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["57"]["Thickness"] = 2.5;
+Encton["57"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Execute.UICorner
+Encton["58"] = Instance.new("UICorner", Encton["56"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Copy
+Encton["59"] = Instance.new("TextButton", Encton["50"]);
+Encton["59"]["BorderSizePixel"] = 0;
+Encton["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["59"]["TextSize"] = 14;
+Encton["59"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["59"]["Size"] = UDim2.new(0, 64, 0, 28);
+Encton["59"]["Name"] = [[Copy]];
+Encton["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["59"]["Text"] = [[Copy]];
+Encton["59"]["Position"] = UDim2.new(0.7474, 0, 0.66, 0);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Copy.UIStroke
+Encton["5a"] = Instance.new("UIStroke", Encton["59"]);
+Encton["5a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["5a"]["Thickness"] = 2.5;
+Encton["5a"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.Template.FoundedScript.Copy.UICorner
+Encton["5b"] = Instance.new("UICorner", Encton["59"]);
+
+
+
+-- StarterGui.Encton.Main.CloudFrame.scrollcloud.UIPadding
+Encton["5c"] = Instance.new("UIPadding", Encton["4b"]);
+Encton["5c"]["PaddingTop"] = UDim.new(0, 10);
+Encton["5c"]["PaddingLeft"] = UDim.new(0, 8);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame
+Encton["5d"] = Instance.new("Frame", Encton["2"]);
+Encton["5d"]["Visible"] = false;
+Encton["5d"]["BorderSizePixel"] = 0;
+Encton["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["5d"]["Size"] = UDim2.new(0, 315, 0, 248);
+Encton["5d"]["Position"] = UDim2.new(0.35141, 0, 0.18405, 0);
+Encton["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["5d"]["Name"] = [[ExecutorFrame]];
+Encton["5d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.TextHolder
+Encton["5e"] = Instance.new("ScrollingFrame", Encton["5d"]);
+Encton["5e"]["Active"] = true;
+Encton["5e"]["BorderSizePixel"] = 0;
+Encton["5e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+Encton["5e"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
+Encton["5e"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+Encton["5e"]["Name"] = [[TextHolder]];
+Encton["5e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+Encton["5e"]["Size"] = UDim2.new(0, 321, 0, 216);
+Encton["5e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["5e"]["Position"] = UDim2.new(-0.0381, 0, -0.04839, 0);
+Encton["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.TextHolder.Input
+Encton["5f"] = Instance.new("TextBox", Encton["5e"]);
+Encton["5f"]["CursorPosition"] = -1;
+Encton["5f"]["Name"] = [[Input]];
+Encton["5f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+Encton["5f"]["BorderSizePixel"] = 0;
+Encton["5f"]["TextWrapped"] = true;
+Encton["5f"]["TextSize"] = 14;
+Encton["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["5f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+Encton["5f"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+Encton["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["5f"]["MultiLine"] = true;
+Encton["5f"]["ClearTextOnFocus"] = false;
+Encton["5f"]["PlaceholderText"] = [[Any scripts?]];
+Encton["5f"]["Size"] = UDim2.new(0, 321, 0, 214);
+Encton["5f"]["Position"] = UDim2.new(0, 0, 0.0049, 0);
+Encton["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["5f"]["Text"] = [[]];
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.TextHolder.Input.LocalScript
+Encton["60"] = Instance.new("LocalScript", Encton["5f"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Execute
+Encton["61"] = Instance.new("TextButton", Encton["5d"]);
+Encton["61"]["BorderSizePixel"] = 0;
+Encton["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["61"]["TextSize"] = 14;
+Encton["61"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
+Encton["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["61"]["Size"] = UDim2.new(0, 130, 0, 34);
+Encton["61"]["Name"] = [[Execute]];
+Encton["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["61"]["Text"] = [[Execute]];
+Encton["61"]["Position"] = UDim2.new(-0.00952, 0, 0.89113, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Execute.UIStroke
+Encton["62"] = Instance.new("UIStroke", Encton["61"]);
+Encton["62"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["62"]["Thickness"] = 1.5;
+Encton["62"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Execute.UICorner
+Encton["63"] = Instance.new("UICorner", Encton["61"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Execute.LocalScript
+Encton["64"] = Instance.new("LocalScript", Encton["61"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Clear
+Encton["65"] = Instance.new("TextButton", Encton["5d"]);
+Encton["65"]["BorderSizePixel"] = 0;
+Encton["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["65"]["TextSize"] = 14;
+Encton["65"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
+Encton["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["65"]["Size"] = UDim2.new(0, 92, 0, 34);
+Encton["65"]["Name"] = [[Clear]];
+Encton["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["65"]["Text"] = [[Clear]];
+Encton["65"]["Position"] = UDim2.new(0.3746, 0, 0.89113, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Clear.UIStroke
+Encton["66"] = Instance.new("UIStroke", Encton["65"]);
+Encton["66"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["66"]["Thickness"] = 1.5;
+Encton["66"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Clear.LocalScript
+Encton["67"] = Instance.new("LocalScript", Encton["65"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Save
+Encton["68"] = Instance.new("TextButton", Encton["5d"]);
+Encton["68"]["BorderSizePixel"] = 0;
+Encton["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["68"]["TextSize"] = 14;
+Encton["68"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
+Encton["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["68"]["Size"] = UDim2.new(0, 86, 0, 34);
+Encton["68"]["Name"] = [[Save]];
+Encton["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["68"]["Text"] = [[Save]];
+Encton["68"]["Position"] = UDim2.new(0.70794, 0, 0.89113, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Save.UIStroke
+Encton["69"] = Instance.new("UIStroke", Encton["68"]);
+Encton["69"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["69"]["Thickness"] = 1.5;
+Encton["69"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Save.UICorner
+Encton["6a"] = Instance.new("UICorner", Encton["68"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.Save.LocalScript
+Encton["6b"] = Instance.new("LocalScript", Encton["68"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame
+Encton["6c"] = Instance.new("Frame", Encton["5d"]);
+Encton["6c"]["Visible"] = false;
+Encton["6c"]["BorderSizePixel"] = 0;
+Encton["6c"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+Encton["6c"]["Size"] = UDim2.new(0, 364, 0, 80);
+Encton["6c"]["Position"] = UDim2.new(-0.34286, 0, -0.61694, 0);
+Encton["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["6c"]["Name"] = [[SaveFrame]];
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.UICorner
+Encton["6d"] = Instance.new("UICorner", Encton["6c"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.title
+Encton["6e"] = Instance.new("TextLabel", Encton["6c"]);
+Encton["6e"]["TextWrapped"] = true;
+Encton["6e"]["BorderSizePixel"] = 0;
+Encton["6e"]["TextSize"] = 14;
+Encton["6e"]["TextScaled"] = true;
+Encton["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["6e"]["BackgroundTransparency"] = 1;
+Encton["6e"]["Size"] = UDim2.new(0, 91, 0, 21);
+Encton["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["6e"]["Text"] = [[Save Script]];
+Encton["6e"]["Name"] = [[title]];
+Encton["6e"]["Position"] = UDim2.new(0.03571, 0, 0.125, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.InputName
+Encton["6f"] = Instance.new("TextBox", Encton["6c"]);
+Encton["6f"]["CursorPosition"] = -1;
+Encton["6f"]["Name"] = [[InputName]];
+Encton["6f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+Encton["6f"]["BorderSizePixel"] = 0;
+Encton["6f"]["TextSize"] = 14;
+Encton["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["6f"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+Encton["6f"]["PlaceholderText"] = [[What would you name it?]];
+Encton["6f"]["Size"] = UDim2.new(0, 343, 0, 26);
+Encton["6f"]["Position"] = UDim2.new(0.03571, 0, 0.4875, 0);
+Encton["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["6f"]["Text"] = [[]];
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.InputName.UIStroke
+Encton["70"] = Instance.new("UIStroke", Encton["6f"]);
+Encton["70"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["70"]["Thickness"] = 1.5;
+Encton["70"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.InputName.UICorner
+Encton["71"] = Instance.new("UICorner", Encton["6f"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.InputName.UIPadding
+Encton["72"] = Instance.new("UIPadding", Encton["6f"]);
+Encton["72"]["PaddingLeft"] = UDim.new(0, 10);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn
+Encton["73"] = Instance.new("TextButton", Encton["6c"]);
+Encton["73"]["TextWrapped"] = true;
+Encton["73"]["BorderSizePixel"] = 0;
+Encton["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["73"]["TextSize"] = 14;
+Encton["73"]["TextScaled"] = true;
+Encton["73"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["73"]["Size"] = UDim2.new(0, 233, 0, 25);
+Encton["73"]["Name"] = [[SaveBtn]];
+Encton["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["73"]["Text"] = [[Save]];
+Encton["73"]["Position"] = UDim2.new(0.33791, 0, 0.075, 0);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn.UIStroke
+Encton["74"] = Instance.new("UIStroke", Encton["73"]);
+Encton["74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["74"]["Thickness"] = 1.5;
+Encton["74"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn.UICorner
+Encton["75"] = Instance.new("UICorner", Encton["73"]);
+
+
+
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn.LocalScript
+Encton["76"] = Instance.new("LocalScript", Encton["73"]);
+
+
+
+-- StarterGui.Encton.Main.ButtonHandler
+Encton["77"] = Instance.new("LocalScript", Encton["2"]);
+Encton["77"]["Name"] = [[ButtonHandler]];
+
+
+-- StarterGui.Encton.Main.Close
+Encton["78"] = Instance.new("ImageButton", Encton["2"]);
+Encton["78"]["BorderSizePixel"] = 0;
+Encton["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["78"]["Image"] = [[rbxassetid://6031094678]];
+Encton["78"]["Size"] = UDim2.new(0, 23, 0, 22);
+Encton["78"]["BackgroundTransparency"] = 1;
+Encton["78"]["Name"] = [[Close]];
+Encton["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["78"]["Position"] = UDim2.new(0.9257, 0, 0.03681, 0);
+
+
+-- StarterGui.Encton.Main.Close.LocalScript
+Encton["79"] = Instance.new("LocalScript", Encton["78"]);
+
+
+
+-- StarterGui.Encton.Main.SettingsFrame
+Encton["7a"] = Instance.new("Frame", Encton["2"]);
+Encton["7a"]["Visible"] = false;
+Encton["7a"]["BorderSizePixel"] = 0;
+Encton["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7a"]["Size"] = UDim2.new(0, 315, 0, 248);
+Encton["7a"]["Position"] = UDim2.new(0.35141, 0, 0.18405, 0);
+Encton["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["7a"]["Name"] = [[SettingsFrame]];
+Encton["7a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS
+Encton["7b"] = Instance.new("Frame", Encton["7a"]);
+Encton["7b"]["BorderSizePixel"] = 0;
+Encton["7b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["7b"]["Size"] = UDim2.new(0, 309, 0, 50);
+Encton["7b"]["Position"] = UDim2.new(0, 0, 0.0121, 0);
+Encton["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["7b"]["Name"] = [[UnlockFPS]];
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.UIStroke
+Encton["7c"] = Instance.new("UIStroke", Encton["7b"]);
+Encton["7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["7c"]["Thickness"] = 2.5;
+Encton["7c"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.UICorner
+Encton["7d"] = Instance.new("UICorner", Encton["7b"]);
+
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.title
+Encton["7e"] = Instance.new("TextLabel", Encton["7b"]);
+Encton["7e"]["TextWrapped"] = true;
+Encton["7e"]["BorderSizePixel"] = 0;
+Encton["7e"]["TextSize"] = 14;
+Encton["7e"]["TextScaled"] = true;
+Encton["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7e"]["BackgroundTransparency"] = 1;
+Encton["7e"]["Size"] = UDim2.new(0, 104, 0, 17);
+Encton["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["7e"]["Text"] = [[Unlock FPS]];
+Encton["7e"]["Name"] = [[title]];
+Encton["7e"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.desc
+Encton["7f"] = Instance.new("TextLabel", Encton["7b"]);
+Encton["7f"]["TextWrapped"] = true;
+Encton["7f"]["BorderSizePixel"] = 0;
+Encton["7f"]["TextSize"] = 14;
+Encton["7f"]["TextTransparency"] = 0.8;
+Encton["7f"]["TextScaled"] = true;
+Encton["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["7f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["7f"]["BackgroundTransparency"] = 1;
+Encton["7f"]["Size"] = UDim2.new(0, 189, 0, 24);
+Encton["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["7f"]["Text"] = [[Play your games at finest quality.]];
+Encton["7f"]["Name"] = [[desc]];
+Encton["7f"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable
+Encton["80"] = Instance.new("ImageButton", Encton["7b"]);
+Encton["80"]["BorderSizePixel"] = 0;
+Encton["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["80"]["ImageColor3"] = Color3.fromRGB(189, 0, 0);
+Encton["80"]["Image"] = [[rbxassetid://6031068429]];
+Encton["80"]["Size"] = UDim2.new(0, 41, 0, 40);
+Encton["80"]["BackgroundTransparency"] = 1;
+Encton["80"]["Name"] = [[EnableDisable]];
+Encton["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["80"]["Position"] = UDim2.new(0.79288, 0, 0.1, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable.LocalScript
+Encton["81"] = Instance.new("LocalScript", Encton["80"]);
+
+
+
+-- StarterGui.Encton.Main.background
+Encton["82"] = Instance.new("Frame", Encton["2"]);
+Encton["82"]["BorderSizePixel"] = 0;
+Encton["82"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["82"]["Size"] = UDim2.new(0, 498, 0, 326);
+Encton["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["82"]["Name"] = [[background]];
+Encton["82"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.Encton.Main.background.UICorner
+Encton["83"] = Instance.new("UICorner", Encton["82"]);
+
+
+
+-- StarterGui.Encton.Main.Notice
+Encton["84"] = Instance.new("Frame", Encton["2"]);
+Encton["84"]["BorderSizePixel"] = 0;
+Encton["84"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["84"]["Size"] = UDim2.new(0, 378, 0, 241);
+Encton["84"]["Position"] = UDim2.new(0.14859, 0, 0.11963, 0);
+Encton["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["84"]["Name"] = [[Notice]];
+
+
+-- StarterGui.Encton.Main.Notice.UICorner
+Encton["85"] = Instance.new("UICorner", Encton["84"]);
+
+
+
+-- StarterGui.Encton.Main.Notice.title
+Encton["86"] = Instance.new("TextLabel", Encton["84"]);
+Encton["86"]["TextWrapped"] = true;
+Encton["86"]["BorderSizePixel"] = 0;
+Encton["86"]["TextSize"] = 30;
+Encton["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["86"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["86"]["BackgroundTransparency"] = 1;
+Encton["86"]["RichText"] = true;
+Encton["86"]["Size"] = UDim2.new(0, 317, 0, 14);
+Encton["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["86"]["Text"] = [[<font color="rgb(68,255,0)">N</font><font color="rgb(54,230,0)">o</font><font color="rgb(41,204,0)">t</font><font color="rgb(27,179,0)">i</font><font color="rgb(14,153,0)">c</font><font color="rgb(0,170,0)">e</font><font color="rgb(255,255,255)"> from </font><font color="rgb(0,0,255)">B</font><font color="rgb(0,0,226)">a</font><font color="rgb(0,0,198)">t</font><font color="rgb(0,0,170)">u</font><font color="rgb(0,0,153)">s</font><font color="rgb(0,0,140)">s</font><font color="rgb(0,0,128)">z</font>
+]];
+Encton["86"]["Name"] = [[title]];
+Encton["86"]["Position"] = UDim2.new(0.07937, 0, 0.13693, 0);
+
+
+-- StarterGui.Encton.Main.Notice.desc
+Encton["87"] = Instance.new("TextLabel", Encton["84"]);
+Encton["87"]["TextWrapped"] = true;
+Encton["87"]["BorderSizePixel"] = 0;
+Encton["87"]["TextSize"] = 15;
+Encton["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["87"]["BackgroundTransparency"] = 1;
+Encton["87"]["Size"] = UDim2.new(0, 347, 0, 119);
+Encton["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["87"]["Text"] = [[Hello, you are currently using "Encton" executor. But i would like to make an announcment. I worked really hard on this so i only accept getting the image id's. And not the ui source, other gui scripts. If any copied script will got caught. Will be reported.]];
+Encton["87"]["Name"] = [[desc]];
+Encton["87"]["Position"] = UDim2.new(0.03968, 0, 0.22822, 0);
+
+
+-- StarterGui.Encton.Main.Notice.agreebtn
+Encton["88"] = Instance.new("TextButton", Encton["84"]);
+Encton["88"]["BorderSizePixel"] = 0;
+Encton["88"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["88"]["TextSize"] = 14;
+Encton["88"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+Encton["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["88"]["Size"] = UDim2.new(0, 200, 0, 50);
+Encton["88"]["Name"] = [[agreebtn]];
+Encton["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["88"]["Text"] = [[Okay, I agree.]];
+Encton["88"]["Position"] = UDim2.new(0.23545, 0, 0.72199, 0);
+
+
+-- StarterGui.Encton.Main.Notice.agreebtn.UICorner
+Encton["89"] = Instance.new("UICorner", Encton["88"]);
+
+
+
+-- StarterGui.Encton.Main.Notice.agreebtn.UIStroke
+Encton["8a"] = Instance.new("UIStroke", Encton["88"]);
+Encton["8a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["8a"]["Thickness"] = 3;
+Encton["8a"]["Color"] = Color3.fromRGB(0, 171, 0);
+
+
+-- StarterGui.Encton.Main.Notice.agreebtn.LocalScript
+Encton["8b"] = Instance.new("LocalScript", Encton["88"]);
+
+
+
+-- StarterGui.Encton.OpenEncton
+Encton["8c"] = Instance.new("TextButton", Encton["1"]);
+Encton["8c"]["TextWrapped"] = true;
+Encton["8c"]["BorderSizePixel"] = 0;
+Encton["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+Encton["8c"]["TextSize"] = 14;
+Encton["8c"]["TextScaled"] = true;
+Encton["8c"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+Encton["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+Encton["8c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+Encton["8c"]["Size"] = UDim2.new(0, 136, 0, 24);
+Encton["8c"]["Name"] = [[OpenEncton]];
+Encton["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+Encton["8c"]["Text"] = [[Open Encton]];
+Encton["8c"]["Visible"] = false;
+Encton["8c"]["Position"] = UDim2.new(0.11827, 0, 0.24513, 0);
+
+
+-- StarterGui.Encton.OpenEncton.UIStroke
+Encton["8d"] = Instance.new("UIStroke", Encton["8c"]);
+Encton["8d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+Encton["8d"]["Thickness"] = 2;
+Encton["8d"]["Color"] = Color3.fromRGB(91, 91, 91);
+
+
+-- StarterGui.Encton.OpenEncton.UICorner
+Encton["8e"] = Instance.new("UICorner", Encton["8c"]);
+
+
+
+-- StarterGui.Encton.OpenEncton.LocalScript
+Encton["8f"] = Instance.new("LocalScript", Encton["8c"]);
+
+
+
+-- StarterGui.Encton.Main.DragScript
+local function C_20()
+local script = Encton["20"];
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_20);
+-- StarterGui.Encton.Main.HomeFrame.GreetPart.nameandrank.LocalScript
+local function C_26()
+local script = Encton["26"];
+	script.Parent.Text = "Greetings, "..game.Players.LocalPlayer.Name.."!\nRank: Guest"
+	
+	if game.Players.LocalPlayer.Name == "newAccount123Lols" then
+		script.Parent.Text = "Greetings, "..game.Players.LocalPlayer.Name.."!\nRank: Owner"
+	end
+	
+	--[[
+	
+	local btn = script.Parent
+	
+	    local function AddScript(name, source)
+	        makefolder("Sparrow")
+	        writefile("Sparrow/" .. name, source)
+	
+	        local parent = script.Parent.Parent.Parent.scripts.ScrollingFrame
+	        local hub = script.Parent.Parent.Parent.scripts.ScrollingFrame.List.newhubs
+	        local newhub = hub:Clone()
+	
+	        local scriptname = newhub.TextLabel
+	        local execbutton = newhub.load
+	        local delbutton = newhub.TextButton
+	
+	        newhub.Parent = parent
+	        newhub.Visible = true
+	        scriptname.Text = "script.txt"
+	        execbutton.MouseButton1Click:Connect(function()
+	            loadstring(source)()
+	        end)
+	        delbutton.MouseButton1Click:Connect(function()
+	            newhub:Destroy()
+	        delfile("Sparrow/"..name)
+	        end)
+	    end
+	
+	    for _, file in ipairs(listfiles("Sparrow")) do
+	        AddScript(file:sub(22, #file), readfile(file), true)
+	    end
+	
+	    btn.MouseButton1Click:Connect(function()
+	        AddScript(script.Parent.Parent.sname.Text, script.Parent.Parent.code.Text, false)
+	        script.Parent.Parent.code.Text = ""
+	        script.Parent.Parent.sname.Text = ""
+	    end)
+	
+	--]]
+end;
+task.spawn(C_26);
+-- StarterGui.Encton.Main.CloudFrame.SearchBtn.LocalScript
+local function C_4a()
+local script = Encton["4a"];
+	local btn = script.Parent
+	
+	local function AddTab(imageTab, scriptname, source)
+		local scriptFrame = script.Parent.Parent.scrollcloud
+		local newList = scriptFrame.Template.FoundedScript:Clone()
+	
+		local execute = newList.Execute
+		local copy = newList.Copy
+	
+		local scname = newList.scname
+		local img = newList.scimage
+	
+		newList.Name = scriptname
+		newList.Parent = scriptFrame
+		newList.Visible = true
+	
+		img.Image = imageTab
+	
+		scname.Text = scriptname
+	
+		execute.MouseButton1Click:Connect(function()
+			loadstring(source)()
+		end)
+		
+		copy.MouseButton1Click:Connect(function()
+			setclipboard(source)
+		end)
+		
+	end
+	
+	
+	local http = game:GetService("HttpService")
+	btn.MouseButton1Click:Connect(function()
+		for _, child in ipairs(script.Parent.Parent.scrollcloud:GetChildren()) do
+			if child:IsA("Frame") then
+				child:Destroy()
+			end
+		end
+	
+	
+		local url = "https://scriptblox.com/api/script/search?filters=free&q="..script.Parent.Parent.Input.Text
+		local response = game:HttpGetAsync(url)
+		local decoded = http:JSONDecode(response)
+		for _, script in pairs(decoded.result.scripts) do
+			if(script.isUniversal == true) then
+				AddTab("rbxassetid://13987073344", script.title, script.script)
+			else
+				AddTab("https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..script.game.gameId.."&fmt=png&wd=420&ht=420", script.title, script.script)
+			end
+	
+		end
+	
+	end)
+	
+	
+end;
+task.spawn(C_4a);
+-- StarterGui.Encton.Main.ExecutorFrame.TextHolder.Input.LocalScript
+local function C_60()
+local script = Encton["60"];
+	-- Parent this script to the TextBox
+	local textBox = script.Parent
+	local scrollingFrame = textBox.Parent -- Ensure the parent is a ScrollingFrame
+	
+	-- Define initial sizes
+	local initialTextBoxSize = UDim2.new(0, 321, 0, 235) -- Initial size of the TextBox
+	local initialCanvasSize = UDim2.new(0, 400, 0, 300) -- Initial CanvasSize for ScrollingFrame
+	local padding = 10 -- Padding for resizing
+	
+	-- Apply the initial sizes
+	textBox.Size = initialTextBoxSize
+	scrollingFrame.CanvasSize = initialCanvasSize
+	
+	-- Function to resize the TextBox
+	local function resizeTextBox()
+		-- Calculate the required size for the text
+		local textSize = game:GetService("TextService"):GetTextSize(
+			textBox.Text,
+			textBox.TextSize,
+			textBox.Font,
+			Vector2.new(textBox.AbsoluteSize.X, math.huge)
+		)
+	
+		-- Ensure the TextBox resizes, but not below its initial size
+		local newWidth = math.max(textSize.X + padding, initialTextBoxSize.X.Offset)
+		local newHeight = math.max(textSize.Y + padding, initialTextBoxSize.Y.Offset)
+		textBox.Size = UDim2.new(0, newWidth, 0, newHeight)
+	end
+	
+	-- Function to resize the ScrollingFrame's CanvasSize
+	local function resizeCanvas()
+		local maxWidth = initialCanvasSize.X.Offset
+		local maxHeight = initialCanvasSize.Y.Offset
+	
+		-- Calculate the required CanvasSize based on children
+		for _, child in ipairs(scrollingFrame:GetChildren()) do
+			if child:IsA("GuiObject") then
+				local childSize = child.AbsoluteSize
+				local childPos = child.AbsolutePosition - scrollingFrame.AbsolutePosition
+	
+				maxWidth = math.max(maxWidth, childPos.X + childSize.X)
+				maxHeight = math.max(maxHeight, childPos.Y + childSize.Y)
+			end
+		end
+	
+		-- Apply the new CanvasSize with padding
+		scrollingFrame.CanvasSize = UDim2.new(0, maxWidth + padding, 0, maxHeight + padding)
+	end
+	
+	-- Function to update both TextBox and Canvas sizes
+	local function updateSizes()
+		resizeTextBox()
+		resizeCanvas()
+	end
+	
+	-- Connect events to handle dynamic resizing
+	textBox:GetPropertyChangedSignal("Text"):Connect(updateSizes)
+	scrollingFrame.ChildAdded:Connect(resizeCanvas)
+	scrollingFrame.ChildRemoved:Connect(resizeCanvas)
+	
+	-- Initial adjustment to ensure everything starts correctly
+	updateSizes()
+	
+end;
+task.spawn(C_60);
+-- StarterGui.Encton.Main.ExecutorFrame.Execute.LocalScript
+local function C_64()
+local script = Encton["64"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.TextHolder.Input.Text)()
+	end)
+end;
+task.spawn(C_64);
+-- StarterGui.Encton.Main.ExecutorFrame.Clear.LocalScript
+local function C_67()
+local script = Encton["67"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextHolder.Input.Text = ""
+	end)
+end;
+task.spawn(C_67);
+-- StarterGui.Encton.Main.ExecutorFrame.Save.LocalScript
+local function C_6b()
+local script = Encton["6b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.SaveFrame.Visible = true
+	end)
+end;
+task.spawn(C_6b);
+-- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn.LocalScript
+local function C_76()
+local script = Encton["76"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local btn = script.Parent
+	
+		local function AddScript(name, source)
+			makefolder("Encton")
+			writefile("Encton/" .. name, source)
+	
+			local parent = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll
+			local hub = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll.Template.NameSaved
+			local newhub = hub:Clone()
+	
+			local scriptname = newhub.scriptName
+			local execbutton = newhub.Execute
+			local delbutton = newhub.Delete
+	
+			newhub.Parent = parent
+			newhub.Visible = true
+			scriptname.Text = name
+			execbutton.MouseButton1Click:Connect(function()
+				loadstring(source)()
+			end)
+			delbutton.MouseButton1Click:Connect(function()
+				newhub:Destroy()
+				delfile("Encton/"..name)
+			end)
+		end
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll:GetChildren()) do
+			if v:IsA("Frame") then
+				v:Destroy()
+			end
+		end
+	wait(1)
+		for _, file in ipairs(listfiles("Encton")) do
+			AddScript(file:sub(22, #file), readfile(file), true) -- old value: 22
+		end
+	
+		btn.MouseButton1Click:Connect(function()
+			AddScript(script.Parent.Parent.InputName.Text, script.Parent.Parent.Parent.Parent.ExecutorFrame.TextHolder.Input.Text, false)
+			script.Parent.Parent.InputName.Text = ""
+			script.Parent.Parent.Parent.SaveFrame.Visible = false
+		end)
+	end)
+end;
+task.spawn(C_76);
+-- StarterGui.Encton.Main.ButtonHandler
+local function C_77()
+local script = Encton["77"];
+	local function tween(object, mode)
+		if mode == "open" then
+			game:GetService("TweenService"):Create(object, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.9}):Play()
+		elseif mode == "close" then
+			game:GetService("TweenService"):Create(object, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {BackgroundTransparency = 1}):Play()
+		end
+	end
+	
+	local hbtn = script.Parent.Home
+	local ebtn = script.Parent.Executor
+	local sbtn = script.Parent.Settings
+	local cbtn = script.Parent.Cloud
+	
+	local hpage = script.Parent.HomeFrame
+	local epage = script.Parent.ExecutorFrame
+	local cpage = script.Parent.CloudFrame
+	local spage = script.Parent.SettingsFrame
+	
+	hbtn.MouseButton1Click:Connect(function()
+		tween(hbtn, "open")
+		tween(ebtn, "close")
+		tween(sbtn, "close")
+		tween(cbtn, "close")
+		
+		hpage.Visible = true
+		epage.Visible = false
+		cpage.Visible = false
+		spage.Visible = false
+	end)
+	
+	ebtn.MouseButton1Click:Connect(function()
+		tween(ebtn, "open")
+		tween(hbtn, "close")
+		tween(sbtn, "close")
+		tween(cbtn, "close")
+		
+		hpage.Visible = false
+		epage.Visible = true
+		cpage.Visible = false
+		spage.Visible = false
+	end)
+	
+	sbtn.MouseButton1Click:Connect(function()
+		tween(sbtn, "open")
+		tween(hbtn, "close")
+		tween(ebtn, "close")
+		tween(cbtn, "close")
+		
+		hpage.Visible = false
+		epage.Visible = false
+		cpage.Visible = false
+		spage.Visible = true
+	end)
+	
+	cbtn.MouseButton1Click:Connect(function()
+		tween(cbtn, "open")
+		tween(hbtn, "close")
+		tween(ebtn, "close")
+		tween(sbtn, "close")
+		
+		hpage.Visible = false
+		epage.Visible = false
+		cpage.Visible = true
+		spage.Visible = false
+	end)
+end;
+task.spawn(C_77);
+-- StarterGui.Encton.Main.Close.LocalScript
+local function C_79()
+local script = Encton["79"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.OpenEncton.Visible = true
+	end)
+end;
+task.spawn(C_79);
+-- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable.LocalScript
+local function C_81()
+local script = Encton["81"];
+	-- close id : 6031068429
+	-- open id : 6031068430
+	--open color : 0, 0.807843, 0
+	-- close color : 188, 0, 0
+	
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle == false then
+			toggle = true
+			script.Parent.Image = "rbxassetid://6031068430"
+			script.Parent.ImageColor3 = Color3.new(0, 0.807843, 0)
+			setfpscap(1000)
+		else
+			toggle = false
+			script.Parent.Image = "rbxassetid://6031068429"
+			script.Parent.ImageColor3 = Color3.new(188, 0, 0)
+			setfpscap(120)
+		end
+	end)
+end;
+task.spawn(C_81);
+-- StarterGui.Encton.Main.Notice.agreebtn.LocalScript
+local function C_8b()
+local script = Encton["8b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Notice.Visible = false
+		script.Parent.Parent.Parent.background.Visible = false
+	end)
+end;
+task.spawn(C_8b);
+-- StarterGui.Encton.OpenEncton.LocalScript
+local function C_8f()
+local script = Encton["8f"];
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 151,0, 25)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {Size = UDim2.new(0, 136,0, 24)}):Play()
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.Main.Visible = true
+	end)
+end;
+task.spawn(C_8f);
+
+return Encton["1"], require;
