@@ -2696,8 +2696,7 @@ function luaY:check_match(ls, what, who, where)
     else
       luaX:syntaxerror(ls, string.format(
         self.LUA_QS.." expected (to close "..self.LUA_QS.." at line %d)",
-		luaX:token2str(ls, what), luaX:token2str(ls, who), where))
-				end
+						luaX:token2str(ls, what), luaX:token2str(ls, who), where))    end
 			end
 		end
 
