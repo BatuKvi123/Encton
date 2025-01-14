@@ -1265,6 +1265,7 @@ G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
 
 -- StarterGui.Encton.Main.background
 G2L["90"] = Instance.new("Frame", G2L["2"]);
+G2L["90"]["Visible"] = false;
 G2L["90"]["BorderSizePixel"] = 0;
 G2L["90"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["90"]["Size"] = UDim2.new(0, 498, 0, 326);
@@ -1280,6 +1281,7 @@ G2L["91"] = Instance.new("UICorner", G2L["90"]);
 
 -- StarterGui.Encton.Main.Notice
 G2L["92"] = Instance.new("Frame", G2L["2"]);
+G2L["92"]["Visible"] = false;
 G2L["92"]["BorderSizePixel"] = 0;
 G2L["92"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["92"]["Size"] = UDim2.new(0, 378, 0, 241);
@@ -3176,8 +3178,8 @@ function luaX:read_string(ls, del, Token)
 				self:inclinenumber(ls)
 			elseif c ~= "EOZ" then -- will raise an error next loop
 				-- escapes handling greatly simplified here:
-				local i = string.find("abfnrtv", c, 1, 1)
-				if i then
+						local i = string.find("abfnrtv", c, 1, 1)
+						if i then
 							self:save(ls, string.sub("\a\b\f\n\r\t\v", i, i))
 							self:nextc(ls)
 						elseif not string.find(c, "%d") then
@@ -6023,7 +6025,14 @@ CLOSE CLOSURE VARARG
 			-- (unless changed) one result
 		end
 
-		--------------------------------------
+--[[--------------------------------------------------------------------
+-- Expression parsing
+----------------------------------------------------------------------]]
+
+		------------------------------------------------------------------------
+		-- parses an expression in parentheses or a single variable
+		-- * used in primaryexp()
+		------------------------------------------------------------------------
 		function luaY:prefixexp(ls, v)
 			-- prefixexp -> NAME | '(' expr ')'
 			local c = ls.t.token
@@ -7063,20 +7072,22 @@ task.spawn(C_6b);
 -- StarterGui.Encton.Main.ExecutorFrame.SaveFrame.SaveBtn.LocalScript
 local function C_76()
 	local script = G2L["76"];
+	--[[
+	
 	local btn = script.Parent
-
+	
 	local function AddScript(name, source)
 		makefolder("Encton")
 		writefile("Encton/" .. name, source)
-
+	
 		local parent = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll
 		local hub = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll.Template.NameSaved
 		local newhub = hub:Clone()
-
+	
 		local scriptname = newhub.scriptName
 		local execbutton = newhub.Execute
 		local delbutton = newhub.Delete
-
+	
 		newhub.Parent = parent
 		newhub.Visible = true
 		scriptname.Text = name
@@ -7094,15 +7105,92 @@ local function C_76()
 		end
 	end
 	wait(1)
+	
 	for _, file in ipairs(listfiles("Encton")) do
 		AddScript(file:sub(22, #file), readfile(file), true) -- old value: 22
 	end
-
+	
+	--WORKING METHOD
+	for _, files in ipairs(listfiles("Encton")) do
+		AddScript(files, readfile(files), true)
+	end
+	--END
+	
 	btn.MouseButton1Click:Connect(function()
 		AddScript(script.Parent.Parent.InputName.Text, script.Parent.Parent.Parent.Parent.ExecutorFrame.TextHolder.Input.Text, false)
 		script.Parent.Parent.InputName.Text = ""
 		script.Parent.Parent.Parent.SaveFrame.Visible = false
 	end)
+	
+	
+	old source
+	--]]
+
+	local folderName = "Enctonsc"
+	local folderPath = folderName .. "/"
+	local btn = script.Parent
+
+	-- Ensure the folder exists
+	if not isfolder(folderName) then
+		makefolder(folderName)
+	end
+
+	-- Function to create a new script entry in the GUI
+	local function AddScript(name, source)
+		writefile(folderPath .. name, source) -- Save the script
+
+		-- Access GUI components
+		local parent = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll
+		local hub = script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll.Template.NameSaved
+		local newhub = hub:Clone()
+
+		-- Configure the new script entry
+		local scriptName = newhub.scriptName
+		local execButton = newhub.Execute
+		local delButton = newhub.Delete
+
+		newhub.Parent = parent
+		newhub.Visible = true
+		scriptName.Text = name
+
+		-- Execution button functionality
+		execButton.MouseButton1Click:Connect(function()
+			loadstring(readfile(folderPath .. name))()
+		end)
+
+		-- Deletion button functionality
+		delButton.MouseButton1Click:Connect(function()
+			newhub:Destroy()
+			delfile(folderPath .. name)
+		end)
+	end
+
+	-- Clear existing script entries in the GUI
+	for _, v in pairs(script.Parent.Parent.Parent.Parent.HomeFrame.SavedScripts.scroll:GetChildren()) do
+		if v:IsA("Frame") then
+			v:Destroy()
+		end
+	end
+	wait(1)
+
+	-- Load all saved scripts into the GUI on startup
+	for _, file in ipairs(listfiles(folderPath)) do
+		local fileName = file:match("([^/]+)$") -- Extract file name
+		AddScript(fileName, readfile(file))
+	end
+
+	-- Button functionality to save a new script
+	btn.MouseButton1Click:Connect(function()
+		local scriptName = script.Parent.Parent.InputName.Text
+		local scriptSource = script.Parent.Parent.Parent.Parent.ExecutorFrame.TextHolder.Input.Text
+
+		if scriptName and scriptName ~= "" and scriptSource and scriptSource ~= "" then
+			AddScript(scriptName, scriptSource)
+			script.Parent.Parent.InputName.Text = ""
+			script.Parent.Parent.Parent.SaveFrame.Visible = false
+		end
+	end)
+
 end;
 task.spawn(C_76);
 -- StarterGui.Encton.Main.ExecutorFrame.Server-Side.LocalScript
