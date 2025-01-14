@@ -12,6 +12,7 @@ local G2L = {};
 
 -- StarterGui.Encton
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui") or gethui());
+G2L["1"]["Enabled"] = false;
 G2L["1"]["Name"] = [[Encton]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -851,7 +852,6 @@ G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 -- StarterGui.Encton.Main.ExecutorFrame.TextHolder.Input
 G2L["5f"] = Instance.new("TextBox", G2L["5e"]);
-G2L["5f"]["CursorPosition"] = -1;
 G2L["5f"]["Name"] = [[Input]];
 G2L["5f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["5f"]["BorderSizePixel"] = 0;
