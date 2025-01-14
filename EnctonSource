@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.Encton
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui") or gethui());
 G2L["1"]["Name"] = [[Encton]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -1265,7 +1265,6 @@ G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
 
 -- StarterGui.Encton.Main.background
 G2L["90"] = Instance.new("Frame", G2L["2"]);
-G2L["90"]["Visible"] = false;
 G2L["90"]["BorderSizePixel"] = 0;
 G2L["90"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["90"]["Size"] = UDim2.new(0, 498, 0, 326);
@@ -1281,7 +1280,6 @@ G2L["91"] = Instance.new("UICorner", G2L["90"]);
 
 -- StarterGui.Encton.Main.Notice
 G2L["92"] = Instance.new("Frame", G2L["2"]);
-G2L["92"]["Visible"] = false;
 G2L["92"]["BorderSizePixel"] = 0;
 G2L["92"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["92"]["Size"] = UDim2.new(0, 378, 0, 241);
@@ -3178,8 +3176,8 @@ function luaX:read_string(ls, del, Token)
 				self:inclinenumber(ls)
 			elseif c ~= "EOZ" then -- will raise an error next loop
 				-- escapes handling greatly simplified here:
-						local i = string.find("abfnrtv", c, 1, 1)
-						if i then
+				local i = string.find("abfnrtv", c, 1, 1)
+				if i then
 							self:save(ls, string.sub("\a\b\f\n\r\t\v", i, i))
 							self:nextc(ls)
 						elseif not string.find(c, "%d") then
@@ -6032,7 +6030,8 @@ CLOSE CLOSURE VARARG
 		------------------------------------------------------------------------
 		-- parses an expression in parentheses or a single variable
 		-- * used in primaryexp()
-		------------------------------------------------------------------------
+		----------------------------------
+		--------------------------------------
 		function luaY:prefixexp(ls, v)
 			-- prefixexp -> NAME | '(' expr ')'
 			local c = ls.t.token
