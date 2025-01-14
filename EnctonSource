@@ -11,8 +11,7 @@
 local G2L = {};
 
 -- StarterGui.Encton
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-G2L["1"]["Enabled"] = false;
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[Encton]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -2704,7 +2703,7 @@ end
 ------------------------------------------------------------------------
 -- adds given string s in string pool, sets e as VK
 ------------------------------------------------------------------------
-		function luaY:codestring(ls, e, s)
+function luaY:codestring(ls, e, s)
 			self:init_exp(e, "VK", luaK:stringK(ls.fs, s))
 		end
 
