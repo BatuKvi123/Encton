@@ -619,7 +619,7 @@ G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["44"]["BackgroundTransparency"] = 1;
 G2L["44"]["Size"] = UDim2.new(0, 292, 0, 43);
 G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Text"] = [[NOTE: this executor is only made for fun. We allow that other players can copy our image ids. But not share publicly with a renamed name with the same gui.]];
+G2L["44"]["Text"] = [[NOTE: this executor is only made for fun. We do not allowing people to skid our ui source / ui scripts. If found out, will be reported.]];
 G2L["44"]["Name"] = [[note]];
 G2L["44"]["Position"] = UDim2.new(0.02532, 0, 0.8629, 0);
 
@@ -1363,7 +1363,6 @@ G2L["98"] = Instance.new("LocalScript", G2L["97"]);
 
 -- StarterGui.Encton.Main.background
 G2L["99"] = Instance.new("Frame", G2L["2"]);
-G2L["99"]["Visible"] = false;
 G2L["99"]["BorderSizePixel"] = 0;
 G2L["99"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["99"]["Size"] = UDim2.new(0, 498, 0, 326);
@@ -1379,7 +1378,6 @@ G2L["9a"] = Instance.new("UICorner", G2L["99"]);
 
 -- StarterGui.Encton.Main.Notice
 G2L["9b"] = Instance.new("Frame", G2L["2"]);
-G2L["9b"]["Visible"] = false;
 G2L["9b"]["BorderSizePixel"] = 0;
 G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["9b"]["Size"] = UDim2.new(0, 378, 0, 241);
@@ -1422,7 +1420,7 @@ G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9e"]["BackgroundTransparency"] = 1;
 G2L["9e"]["Size"] = UDim2.new(0, 347, 0, 119);
 G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["Text"] = [[Hello, you are currently using "Encton" executor. But i would like to make an announcment. I worked really hard on this so i only accept getting the image id's. And not the ui source, other gui scripts. If any copied script will got caught. Will be reported.]];
+G2L["9e"]["Text"] = [[Hello, you are currently using "Encton" Executor. But i would like to make an announcement. I worked so hard on this(probably like 3 hours). Like i mean REALLY HARD. So i do not allow getting any source / script of the executor. If found out, will be reported.]];
 G2L["9e"]["Name"] = [[desc]];
 G2L["9e"]["Position"] = UDim2.new(0.03968, 0, 0.22822, 0);
 
@@ -3152,7 +3150,7 @@ function luaX:trydecpoint(ls, Token)
 	local seminfo = self:str2d(ls.buff)
 	Token.seminfo = seminfo
 	if not seminfo then
-				-- format error with correct decimal point: no more options
+		-- format error with correct decimal point: no more options
 				self:buffreplace(ls, ls.decpoint, ".")  -- undo change (for error message)
 				self:lexerror(ls, "malformed number", "TK_NUMBER")
 			end
