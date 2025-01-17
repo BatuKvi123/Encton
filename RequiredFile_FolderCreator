@@ -1,0 +1,16 @@
+-- just some couple of things here, ignore this part :D
+
+--Encton Sc Folder
+if not isfolder("Enctonsc") then
+makefolder("Enctonsc")
+end
+
+--Encton Workspace Folder
+if not isfolder("EnctonWorkspace") then
+makefolder("EnctonWorkspace")
+end
+
+--EnctonEditorText file
+if not isfile("EnctonWorkspace/EnctonEditorText") then
+writefile("EnctonWorkspace/EnctonEditorText", "")
+end
