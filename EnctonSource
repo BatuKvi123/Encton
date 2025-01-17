@@ -1,31 +1,6 @@
--- just some couple of things here, ignore this part :D
+-- File / Folder Loader
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator"))()
 
---Encton Sc Folder
-if not isfolder("Enctonsc") then
-makefolder("Enctonsc")
-end
-
---Encton Workspace Folder
-if not isfolder("EnctonWorkspace") then
-makefolder("EnctonWorkspace")
-end
-
---EnctonEditorText file
-if not isfile("EnctonWorkspace/EnctonEditorText") then
-writefile("EnctonWorkspace/EnctonEditorText", "")
-end
-
-
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 167 | Scripts: 17 | Modules: 3 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Encton
@@ -656,7 +631,6 @@ G2L["45"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.Encton.Main.CloudFrame.Input
 G2L["46"] = Instance.new("TextBox", G2L["45"]);
-G2L["46"]["CursorPosition"] = -1;
 G2L["46"]["Name"] = [[Input]];
 G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["46"]["BorderSizePixel"] = 0;
@@ -1484,12 +1458,12 @@ G2L["a3"]["TextScaled"] = true;
 G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["a3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["a3"]["Size"] = UDim2.new(0, 136, 0, 24);
+G2L["a3"]["Size"] = UDim2.new(0, 35, 0, 29);
 G2L["a3"]["Name"] = [[OpenEncton]];
 G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["Text"] = [[Open Encton]];
+G2L["a3"]["Text"] = [[E]];
 G2L["a3"]["Visible"] = false;
-G2L["a3"]["Position"] = UDim2.new(0.11827, 0, 0.24513, 0);
+G2L["a3"]["Position"] = UDim2.new(0.08253, 0, 0.24774, 0);
 
 
 -- StarterGui.Encton.OpenEncton.UIStroke
@@ -7476,11 +7450,11 @@ task.spawn(C_a2);
 local function C_a6()
 	local script = G2L["a6"];
 	script.Parent.MouseEnter:Connect(function()
-		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 151,0, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 43,0, 43)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {Size = UDim2.new(0, 136,0, 24)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {Size = UDim2.new(0, 35,0, 29)}):Play()
 	end)
 
 	script.Parent.MouseButton1Click:Connect(function()
