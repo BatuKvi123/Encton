@@ -11,11 +11,11 @@ makefolder("EnctonWorkspace")
 end
 
 --EnctonEditorText File
-if not isfile("EnctonWorkspace/EnctonEditorText") then
-writefile("EnctonWorkspace/EnctonEditorText", "")
+if not isfile("EnctonWorkspace/EnctonEditorText.lua") then
+writefile("EnctonWorkspace/EnctonEditorText.lua", "")
 end
 
 --Encton KeyInput File
-if not isfile("EnctonWorkspace/EnctonKeyInput") then
-	writefile("EnctonWorkspace/EnctonKeyInput", "")
+if not isfile("EnctonWorkspace/EnctonKeyInput.lua") then
+	writefile("EnctonWorkspace/EnctonKeyInput.lua", "")
 end
