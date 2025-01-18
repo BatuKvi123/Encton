@@ -10,7 +10,12 @@ if not isfolder("EnctonWorkspace") then
 makefolder("EnctonWorkspace")
 end
 
---EnctonEditorText file
+--EnctonEditorText File
 if not isfile("EnctonWorkspace/EnctonEditorText") then
 writefile("EnctonWorkspace/EnctonEditorText", "")
+end
+
+--Encton KeyInput File
+if not isfile("EnctonWorkspace/EnctonKeyInput") then
+	writefile("EnctonWorkspace/EnctonKeyInput", "")
 end
