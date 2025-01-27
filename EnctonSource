@@ -1662,9 +1662,6 @@ task.spawn(C_68);
 -- StarterGui.EnctonThemed.Main.ExecutorFrame.Execute.LocalScript
 local function C_6c()
 local script = G2L["6c"];
-	local executiontype = script.Parent.Parent.Parent.Parent.ExecutionType
-	local ServerSideExecutionEvent = script.Parent.Parent.ServerSideEvent
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.TextHolder.Input.Text)()
 		warn("Mode ClientSide CS")
