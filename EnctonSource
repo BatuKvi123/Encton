@@ -283,7 +283,6 @@ G2L["20"]["Name"] = [[DragScript]];
 
 -- StarterGui.EnctonThemed.Main.HomeFrame
 G2L["21"] = Instance.new("Frame", G2L["2"]);
-G2L["21"]["Visible"] = false;
 G2L["21"]["BorderSizePixel"] = 0;
 G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["21"]["Size"] = UDim2.new(0, 315, 0, 248);
@@ -1175,6 +1174,7 @@ G2L["82"] = Instance.new("LocalScript", G2L["81"]);
 
 -- StarterGui.EnctonThemed.Main.SettingsFrame
 G2L["83"] = Instance.new("Frame", G2L["2"]);
+G2L["83"]["Visible"] = false;
 G2L["83"]["BorderSizePixel"] = 0;
 G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["83"]["Size"] = UDim2.new(0, 315, 0, 248);
