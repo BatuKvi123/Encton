@@ -1,13 +1,4 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 166 | Scripts: 16 | Modules: 0 | Tags: 0
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator'))()
 local G2L = {};
 
 -- StarterGui.Encton
@@ -1154,375 +1145,334 @@ G2L["7e"] = Instance.new("LocalScript", G2L["7b"]);
 
 
 
--- StarterGui.Encton.Main.ExecutorFrame.Client-Side
-G2L["7f"] = Instance.new("TextButton", G2L["65"]);
-G2L["7f"]["BorderSizePixel"] = 0;
-G2L["7f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7f"]["TextSize"] = 14;
-G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7f"]["Size"] = UDim2.new(0, 77, 0, 20);
-G2L["7f"]["Name"] = [[Client-Side]];
-G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7f"]["Text"] = [[Client-Side]];
-G2L["7f"]["Position"] = UDim2.new(0.69841, 0, 0.69758, 0);
-
-
--- StarterGui.Encton.Main.ExecutorFrame.Client-Side.UIStroke
-G2L["80"] = Instance.new("UIStroke", G2L["7f"]);
-G2L["80"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["80"]["Thickness"] = 1.5;
-G2L["80"]["Color"] = Color3.fromRGB(91, 91, 91);
-
-
--- StarterGui.Encton.Main.ExecutorFrame.Client-Side.UICorner
-G2L["81"] = Instance.new("UICorner", G2L["7f"]);
-
-
-
--- StarterGui.Encton.Main.ExecutorFrame.Client-Side.LocalScript
-G2L["82"] = Instance.new("LocalScript", G2L["7f"]);
-
-
-
--- StarterGui.Encton.Main.ExecutorFrame.Server-ClientButtons
-G2L["83"] = Instance.new("LocalScript", G2L["65"]);
-G2L["83"]["Name"] = [[Server-ClientButtons]];
-
-
 -- StarterGui.Encton.Main.ExecutorFrame.SaveEditor
-G2L["84"] = Instance.new("LocalScript", G2L["65"]);
-G2L["84"]["Name"] = [[SaveEditor]];
+G2L["7f"] = Instance.new("LocalScript", G2L["65"]);
+G2L["7f"]["Name"] = [[SaveEditor]];
 
 
 -- StarterGui.Encton.Main.ButtonHandler
-G2L["85"] = Instance.new("LocalScript", G2L["2"]);
-G2L["85"]["Name"] = [[ButtonHandler]];
+G2L["80"] = Instance.new("LocalScript", G2L["2"]);
+G2L["80"]["Name"] = [[ButtonHandler]];
 
 
 -- StarterGui.Encton.Main.Close
-G2L["86"] = Instance.new("ImageButton", G2L["2"]);
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["Image"] = [[rbxassetid://6031094678]];
-G2L["86"]["Size"] = UDim2.new(0, 23, 0, 22);
-G2L["86"]["BackgroundTransparency"] = 1;
-G2L["86"]["Name"] = [[Close]];
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Position"] = UDim2.new(0.9257, 0, 0.03681, 0);
+G2L["81"] = Instance.new("ImageButton", G2L["2"]);
+G2L["81"]["BorderSizePixel"] = 0;
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["Image"] = [[rbxassetid://6031094678]];
+G2L["81"]["Size"] = UDim2.new(0, 23, 0, 22);
+G2L["81"]["BackgroundTransparency"] = 1;
+G2L["81"]["Name"] = [[Close]];
+G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["Position"] = UDim2.new(0.9257, 0, 0.03681, 0);
 
 
 -- StarterGui.Encton.Main.Close.LocalScript
-G2L["87"] = Instance.new("LocalScript", G2L["86"]);
+G2L["82"] = Instance.new("LocalScript", G2L["81"]);
 
 
 
 -- StarterGui.Encton.Main.SettingsFrame
-G2L["88"] = Instance.new("Frame", G2L["2"]);
-G2L["88"]["Visible"] = false;
-G2L["88"]["BorderSizePixel"] = 0;
-G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["88"]["Size"] = UDim2.new(0, 315, 0, 248);
-G2L["88"]["Position"] = UDim2.new(0.35141, 0, 0.18405, 0);
-G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["88"]["Name"] = [[SettingsFrame]];
-G2L["88"]["BackgroundTransparency"] = 1;
+G2L["83"] = Instance.new("Frame", G2L["2"]);
+G2L["83"]["Visible"] = false;
+G2L["83"]["BorderSizePixel"] = 0;
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["Size"] = UDim2.new(0, 315, 0, 248);
+G2L["83"]["Position"] = UDim2.new(0.35141, 0, 0.18405, 0);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["Name"] = [[SettingsFrame]];
+G2L["83"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS
-G2L["89"] = Instance.new("Frame", G2L["88"]);
-G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["89"]["Size"] = UDim2.new(0, 309, 0, 50);
-G2L["89"]["Position"] = UDim2.new(0, 0, 0.0121, 0);
-G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Name"] = [[UnlockFPS]];
+G2L["84"] = Instance.new("Frame", G2L["83"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["84"]["Size"] = UDim2.new(0, 309, 0, 50);
+G2L["84"]["Position"] = UDim2.new(0, 0, 0.0121, 0);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Name"] = [[UnlockFPS]];
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.UIStroke
-G2L["8a"] = Instance.new("UIStroke", G2L["89"]);
-G2L["8a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["8a"]["Thickness"] = 2.5;
-G2L["8a"]["Color"] = Color3.fromRGB(68, 68, 68);
+G2L["85"] = Instance.new("UIStroke", G2L["84"]);
+G2L["85"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["85"]["Thickness"] = 2.5;
+G2L["85"]["Color"] = Color3.fromRGB(68, 68, 68);
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.UICorner
-G2L["8b"] = Instance.new("UICorner", G2L["89"]);
+G2L["86"] = Instance.new("UICorner", G2L["84"]);
 
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.title
-G2L["8c"] = Instance.new("TextLabel", G2L["89"]);
-G2L["8c"]["TextWrapped"] = true;
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["TextSize"] = 14;
-G2L["8c"]["TextScaled"] = true;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["BackgroundTransparency"] = 1;
-G2L["8c"]["Size"] = UDim2.new(0, 104, 0, 17);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Text"] = [[Unlock FPS]];
-G2L["8c"]["Name"] = [[title]];
-G2L["8c"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
+G2L["87"] = Instance.new("TextLabel", G2L["84"]);
+G2L["87"]["TextWrapped"] = true;
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["TextSize"] = 14;
+G2L["87"]["TextScaled"] = true;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["BackgroundTransparency"] = 1;
+G2L["87"]["Size"] = UDim2.new(0, 104, 0, 17);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Text"] = [[Unlock FPS]];
+G2L["87"]["Name"] = [[title]];
+G2L["87"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.desc
-G2L["8d"] = Instance.new("TextLabel", G2L["89"]);
-G2L["8d"]["TextWrapped"] = true;
-G2L["8d"]["BorderSizePixel"] = 0;
-G2L["8d"]["TextSize"] = 14;
-G2L["8d"]["TextTransparency"] = 0.8;
-G2L["8d"]["TextScaled"] = true;
-G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["BackgroundTransparency"] = 1;
-G2L["8d"]["Size"] = UDim2.new(0, 189, 0, 24);
-G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8d"]["Text"] = [[Play your games at finest quality.]];
-G2L["8d"]["Name"] = [[desc]];
-G2L["8d"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
+G2L["88"] = Instance.new("TextLabel", G2L["84"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextTransparency"] = 0.8;
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["BackgroundTransparency"] = 1;
+G2L["88"]["Size"] = UDim2.new(0, 189, 0, 24);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[Play your games at finest quality.]];
+G2L["88"]["Name"] = [[desc]];
+G2L["88"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable
-G2L["8e"] = Instance.new("ImageButton", G2L["89"]);
-G2L["8e"]["BorderSizePixel"] = 0;
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["ImageColor3"] = Color3.fromRGB(189, 0, 0);
-G2L["8e"]["Image"] = [[rbxassetid://6031068429]];
-G2L["8e"]["Size"] = UDim2.new(0, 41, 0, 40);
-G2L["8e"]["BackgroundTransparency"] = 1;
-G2L["8e"]["Name"] = [[EnableDisable]];
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8e"]["Position"] = UDim2.new(0.79288, 0, 0.1, 0);
+G2L["89"] = Instance.new("ImageButton", G2L["84"]);
+G2L["89"]["BorderSizePixel"] = 0;
+G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["89"]["ImageColor3"] = Color3.fromRGB(189, 0, 0);
+G2L["89"]["Image"] = [[rbxassetid://6031068429]];
+G2L["89"]["Size"] = UDim2.new(0, 41, 0, 40);
+G2L["89"]["BackgroundTransparency"] = 1;
+G2L["89"]["Name"] = [[EnableDisable]];
+G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["89"]["Position"] = UDim2.new(0.79288, 0, 0.1, 0);
 
 
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable.LocalScript
-G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
+G2L["8a"] = Instance.new("LocalScript", G2L["89"]);
 
 
 
 -- StarterGui.Encton.Main.SettingsFrame.Console
-G2L["90"] = Instance.new("Frame", G2L["88"]);
-G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["90"]["Size"] = UDim2.new(0, 309, 0, 50);
-G2L["90"]["Position"] = UDim2.new(0, 0, 0.27823, 0);
-G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Name"] = [[Console]];
+G2L["8b"] = Instance.new("Frame", G2L["83"]);
+G2L["8b"]["BorderSizePixel"] = 0;
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["8b"]["Size"] = UDim2.new(0, 309, 0, 50);
+G2L["8b"]["Position"] = UDim2.new(0, 0, 0.27823, 0);
+G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8b"]["Name"] = [[Console]];
 
 
 -- StarterGui.Encton.Main.SettingsFrame.Console.UIStroke
+G2L["8c"] = Instance.new("UIStroke", G2L["8b"]);
+G2L["8c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8c"]["Thickness"] = 2.5;
+G2L["8c"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.Console.UICorner
+G2L["8d"] = Instance.new("UICorner", G2L["8b"]);
+
+
+
+-- StarterGui.Encton.Main.SettingsFrame.Console.title
+G2L["8e"] = Instance.new("TextLabel", G2L["8b"]);
+G2L["8e"]["TextWrapped"] = true;
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["TextSize"] = 14;
+G2L["8e"]["TextScaled"] = true;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundTransparency"] = 1;
+G2L["8e"]["Size"] = UDim2.new(0, 104, 0, 17);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[Console]];
+G2L["8e"]["Name"] = [[title]];
+G2L["8e"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.Console.desc
+G2L["8f"] = Instance.new("TextLabel", G2L["8b"]);
+G2L["8f"]["TextWrapped"] = true;
+G2L["8f"]["BorderSizePixel"] = 0;
+G2L["8f"]["TextSize"] = 14;
+G2L["8f"]["TextTransparency"] = 0.8;
+G2L["8f"]["TextScaled"] = true;
+G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8f"]["BackgroundTransparency"] = 1;
+G2L["8f"]["Size"] = UDim2.new(0, 208, 0, 24);
+G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8f"]["Text"] = [[Check console for any error, warns.]];
+G2L["8f"]["Name"] = [[desc]];
+G2L["8f"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.Console.Open
+G2L["90"] = Instance.new("TextButton", G2L["8b"]);
+G2L["90"]["TextWrapped"] = true;
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["TextSize"] = 20;
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["90"]["Size"] = UDim2.new(0, 72, 0, 26);
+G2L["90"]["Name"] = [[Open]];
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Text"] = [[Open]];
+G2L["90"]["Position"] = UDim2.new(0.7411, 0, 0.24, 0);
+
+
+-- StarterGui.Encton.Main.SettingsFrame.Console.Open.UIStroke
 G2L["91"] = Instance.new("UIStroke", G2L["90"]);
 G2L["91"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["91"]["Thickness"] = 2.5;
 G2L["91"]["Color"] = Color3.fromRGB(68, 68, 68);
 
 
--- StarterGui.Encton.Main.SettingsFrame.Console.UICorner
+-- StarterGui.Encton.Main.SettingsFrame.Console.Open.UICorner
 G2L["92"] = Instance.new("UICorner", G2L["90"]);
 
 
 
--- StarterGui.Encton.Main.SettingsFrame.Console.title
-G2L["93"] = Instance.new("TextLabel", G2L["90"]);
-G2L["93"]["TextWrapped"] = true;
-G2L["93"]["BorderSizePixel"] = 0;
-G2L["93"]["TextSize"] = 14;
-G2L["93"]["TextScaled"] = true;
-G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["BackgroundTransparency"] = 1;
-G2L["93"]["Size"] = UDim2.new(0, 104, 0, 17);
-G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["93"]["Text"] = [[Console]];
-G2L["93"]["Name"] = [[title]];
-G2L["93"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
-
-
--- StarterGui.Encton.Main.SettingsFrame.Console.desc
-G2L["94"] = Instance.new("TextLabel", G2L["90"]);
-G2L["94"]["TextWrapped"] = true;
-G2L["94"]["BorderSizePixel"] = 0;
-G2L["94"]["TextSize"] = 14;
-G2L["94"]["TextTransparency"] = 0.8;
-G2L["94"]["TextScaled"] = true;
-G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["94"]["BackgroundTransparency"] = 1;
-G2L["94"]["Size"] = UDim2.new(0, 208, 0, 24);
-G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["94"]["Text"] = [[Check console for any error, warns.]];
-G2L["94"]["Name"] = [[desc]];
-G2L["94"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
-
-
--- StarterGui.Encton.Main.SettingsFrame.Console.Open
-G2L["95"] = Instance.new("TextButton", G2L["90"]);
-G2L["95"]["TextWrapped"] = true;
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["TextSize"] = 20;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["95"]["Size"] = UDim2.new(0, 72, 0, 26);
-G2L["95"]["Name"] = [[Open]];
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Text"] = [[Open]];
-G2L["95"]["Position"] = UDim2.new(0.7411, 0, 0.24, 0);
-
-
--- StarterGui.Encton.Main.SettingsFrame.Console.Open.UIStroke
-G2L["96"] = Instance.new("UIStroke", G2L["95"]);
-G2L["96"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["96"]["Thickness"] = 2.5;
-G2L["96"]["Color"] = Color3.fromRGB(68, 68, 68);
-
-
--- StarterGui.Encton.Main.SettingsFrame.Console.Open.UICorner
-G2L["97"] = Instance.new("UICorner", G2L["95"]);
-
-
-
 -- StarterGui.Encton.Main.background
-G2L["98"] = Instance.new("Frame", G2L["2"]);
-G2L["98"]["Visible"] = false;
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Size"] = UDim2.new(0, 498, 0, 326);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Name"] = [[background]];
-G2L["98"]["BackgroundTransparency"] = 0.5;
+G2L["93"] = Instance.new("Frame", G2L["2"]);
+G2L["93"]["Visible"] = false;
+G2L["93"]["BorderSizePixel"] = 0;
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["93"]["Size"] = UDim2.new(0, 498, 0, 326);
+G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["93"]["Name"] = [[background]];
+G2L["93"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.Encton.Main.background.UICorner
-G2L["99"] = Instance.new("UICorner", G2L["98"]);
+G2L["94"] = Instance.new("UICorner", G2L["93"]);
 
 
 
 -- StarterGui.Encton.Main.Notice
-G2L["9a"] = Instance.new("Frame", G2L["2"]);
-G2L["9a"]["Visible"] = false;
-G2L["9a"]["BorderSizePixel"] = 0;
-G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["9a"]["Size"] = UDim2.new(0, 378, 0, 241);
-G2L["9a"]["Position"] = UDim2.new(0.14859, 0, 0.11963, 0);
-G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["Name"] = [[Notice]];
+G2L["95"] = Instance.new("Frame", G2L["2"]);
+G2L["95"]["Visible"] = false;
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["95"]["Size"] = UDim2.new(0, 378, 0, 241);
+G2L["95"]["Position"] = UDim2.new(0.14859, 0, 0.11963, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Name"] = [[Notice]];
 
 
 -- StarterGui.Encton.Main.Notice.UICorner
-G2L["9b"] = Instance.new("UICorner", G2L["9a"]);
+G2L["96"] = Instance.new("UICorner", G2L["95"]);
 
 
 
 -- StarterGui.Encton.Main.Notice.title
-G2L["9c"] = Instance.new("TextLabel", G2L["9a"]);
-G2L["9c"]["TextWrapped"] = true;
-G2L["9c"]["BorderSizePixel"] = 0;
-G2L["9c"]["TextSize"] = 30;
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["BackgroundTransparency"] = 1;
-G2L["9c"]["RichText"] = true;
-G2L["9c"]["Size"] = UDim2.new(0, 317, 0, 14);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["Text"] = [[<font color="rgb(68,255,0)">N</font><font color="rgb(54,230,0)">o</font><font color="rgb(41,204,0)">t</font><font color="rgb(27,179,0)">i</font><font color="rgb(14,153,0)">c</font><font color="rgb(0,170,0)">e</font><font color="rgb(255,255,255)"> from </font><font color="rgb(0,0,255)">B</font><font color="rgb(0,0,226)">a</font><font color="rgb(0,0,198)">t</font><font color="rgb(0,0,170)">u</font><font color="rgb(0,0,153)">s</font><font color="rgb(0,0,140)">s</font><font color="rgb(0,0,128)">z</font>
+G2L["97"] = Instance.new("TextLabel", G2L["95"]);
+G2L["97"]["TextWrapped"] = true;
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["TextSize"] = 30;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["BackgroundTransparency"] = 1;
+G2L["97"]["RichText"] = true;
+G2L["97"]["Size"] = UDim2.new(0, 317, 0, 14);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Text"] = [[<font color="rgb(68,255,0)">N</font><font color="rgb(54,230,0)">o</font><font color="rgb(41,204,0)">t</font><font color="rgb(27,179,0)">i</font><font color="rgb(14,153,0)">c</font><font color="rgb(0,170,0)">e</font><font color="rgb(255,255,255)"> from </font><font color="rgb(0,0,255)">B</font><font color="rgb(0,0,226)">a</font><font color="rgb(0,0,198)">t</font><font color="rgb(0,0,170)">u</font><font color="rgb(0,0,153)">s</font><font color="rgb(0,0,140)">s</font><font color="rgb(0,0,128)">z</font>
 ]];
-G2L["9c"]["Name"] = [[title]];
-G2L["9c"]["Position"] = UDim2.new(0.07937, 0, 0.13693, 0);
+G2L["97"]["Name"] = [[title]];
+G2L["97"]["Position"] = UDim2.new(0.07937, 0, 0.13693, 0);
 
 
 -- StarterGui.Encton.Main.Notice.desc
-G2L["9d"] = Instance.new("TextLabel", G2L["9a"]);
-G2L["9d"]["TextWrapped"] = true;
-G2L["9d"]["BorderSizePixel"] = 0;
-G2L["9d"]["TextSize"] = 15;
-G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9d"]["BackgroundTransparency"] = 1;
-G2L["9d"]["Size"] = UDim2.new(0, 347, 0, 119);
-G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9d"]["Text"] = [[Hello, you are currently using "Encton" Executor. But i would like to make an announcement. I worked so hard on this(probably like 3 hours). Like i mean REALLY HARD. So i do not allow getting any source / script of the executor. If found out, will be reported.]];
-G2L["9d"]["Name"] = [[desc]];
-G2L["9d"]["Position"] = UDim2.new(0.03968, 0, 0.22822, 0);
+G2L["98"] = Instance.new("TextLabel", G2L["95"]);
+G2L["98"]["TextWrapped"] = true;
+G2L["98"]["BorderSizePixel"] = 0;
+G2L["98"]["TextSize"] = 15;
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundTransparency"] = 1;
+G2L["98"]["Size"] = UDim2.new(0, 347, 0, 119);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["Text"] = [[Hello, you are currently using "Encton" Executor. But i would like to make an announcement. I worked so hard on this(probably like 3 hours). Like i mean REALLY HARD. So i do not allow getting any source / script of the executor. If found out, will be reported.]];
+G2L["98"]["Name"] = [[desc]];
+G2L["98"]["Position"] = UDim2.new(0.03968, 0, 0.22822, 0);
 
 
 -- StarterGui.Encton.Main.Notice.agreebtn
-G2L["9e"] = Instance.new("TextButton", G2L["9a"]);
-G2L["9e"]["BorderSizePixel"] = 0;
-G2L["9e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["TextSize"] = 14;
-G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9e"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["9e"]["Name"] = [[agreebtn]];
-G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9e"]["Text"] = [[Okay, I agree.]];
-G2L["9e"]["Position"] = UDim2.new(0.23545, 0, 0.72199, 0);
+G2L["99"] = Instance.new("TextButton", G2L["95"]);
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["99"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["99"]["Name"] = [[agreebtn]];
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["Text"] = [[Okay, I agree.]];
+G2L["99"]["Position"] = UDim2.new(0.23545, 0, 0.72199, 0);
 
 
 -- StarterGui.Encton.Main.Notice.agreebtn.UICorner
-G2L["9f"] = Instance.new("UICorner", G2L["9e"]);
+G2L["9a"] = Instance.new("UICorner", G2L["99"]);
 
 
 
 -- StarterGui.Encton.Main.Notice.agreebtn.UIStroke
-G2L["a0"] = Instance.new("UIStroke", G2L["9e"]);
-G2L["a0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["a0"]["Thickness"] = 3;
-G2L["a0"]["Color"] = Color3.fromRGB(0, 171, 0);
+G2L["9b"] = Instance.new("UIStroke", G2L["99"]);
+G2L["9b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9b"]["Thickness"] = 3;
+G2L["9b"]["Color"] = Color3.fromRGB(0, 171, 0);
 
 
 -- StarterGui.Encton.Main.Notice.agreebtn.LocalScript
-G2L["a1"] = Instance.new("LocalScript", G2L["9e"]);
+G2L["9c"] = Instance.new("LocalScript", G2L["99"]);
 
 
 
 -- StarterGui.Encton.OpenEncton
-G2L["a2"] = Instance.new("TextButton", G2L["1"]);
-G2L["a2"]["TextWrapped"] = true;
-G2L["a2"]["BorderSizePixel"] = 0;
-G2L["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a2"]["TextSize"] = 14;
-G2L["a2"]["TextScaled"] = true;
-G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["a2"]["Size"] = UDim2.new(0, 35, 0, 29);
-G2L["a2"]["Name"] = [[OpenEncton]];
-G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Text"] = [[E]];
-G2L["a2"]["Visible"] = false;
-G2L["a2"]["Position"] = UDim2.new(0.08253, 0, 0.24774, 0);
+G2L["9d"] = Instance.new("TextButton", G2L["1"]);
+G2L["9d"]["TextWrapped"] = true;
+G2L["9d"]["BorderSizePixel"] = 0;
+G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["TextSize"] = 14;
+G2L["9d"]["TextScaled"] = true;
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["9d"]["Size"] = UDim2.new(0, 35, 0, 29);
+G2L["9d"]["Name"] = [[OpenEncton]];
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d"]["Text"] = [[E]];
+G2L["9d"]["Visible"] = false;
+G2L["9d"]["Position"] = UDim2.new(0.08253, 0, 0.24774, 0);
 
 
 -- StarterGui.Encton.OpenEncton.UIStroke
-G2L["a3"] = Instance.new("UIStroke", G2L["a2"]);
-G2L["a3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["a3"]["Thickness"] = 2;
-G2L["a3"]["Color"] = Color3.fromRGB(91, 91, 91);
+G2L["9e"] = Instance.new("UIStroke", G2L["9d"]);
+G2L["9e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9e"]["Thickness"] = 2;
+G2L["9e"]["Color"] = Color3.fromRGB(91, 91, 91);
 
 
 -- StarterGui.Encton.OpenEncton.UICorner
-G2L["a4"] = Instance.new("UICorner", G2L["a2"]);
+G2L["9f"] = Instance.new("UICorner", G2L["9d"]);
 
 
 
 -- StarterGui.Encton.OpenEncton.LocalScript
-G2L["a5"] = Instance.new("LocalScript", G2L["a2"]);
+G2L["a0"] = Instance.new("LocalScript", G2L["9d"]);
 
-
-
--- StarterGui.Encton.ExecutionType
-G2L["a6"] = Instance.new("NumberValue", G2L["1"]);
-G2L["a6"]["Name"] = [[ExecutionType]];
 
 
 -- StarterGui.Encton.Main.DragScript
@@ -1653,41 +1603,30 @@ task.spawn(C_4d);
 -- StarterGui.Encton.Main.ExecutorFrame.TextHolder.Input.LocalScript
 local function C_68()
 local script = G2L["68"];
-	
 	local textBox = script.Parent
 	local scrollingFrame = textBox.Parent
 	
-	
 	local initialTextBoxSize = UDim2.new(0, 321, 0, 235)
-	local initialCanvasSize = UDim2.new(0, 400, 0, 300)
 	local padding = 10
 	
-	
 	textBox.Size = initialTextBoxSize
-	scrollingFrame.CanvasSize = initialCanvasSize
-	
+	scrollingFrame.CanvasSize = UDim2.new(0, 400, 0, 300)
 	
 	local function resizetxtboxyey()
 		local textSize = game:GetService("TextService"):GetTextSize(
 			textBox.Text,
 			textBox.TextSize,
 			textBox.Font,
-			Vector2.new(textBox.AbsoluteSize.X, math.huge)
+			Vector2.new(math.huge, math.huge) -- Calculate both X and Y fully
 		)
-		
-	
-	
-		
 		local newWidth = math.max(textSize.X + padding, initialTextBoxSize.X.Offset)
 		local newHeight = math.max(textSize.Y + padding, initialTextBoxSize.Y.Offset)
-		
+		textBox.Size = UDim2.new(0, newWidth, 0, newHeight)
 	end
 	
-	
 	local function resizeCanvas()
-		local maxWidth = initialCanvasSize.X.Offset
-		local maxHeight = initialCanvasSize.Y.Offset
-	
+		local maxWidth = 0
+		local maxHeight = 0
 	
 		for _, child in ipairs(scrollingFrame:GetChildren()) do
 			if child:IsA("GuiObject") then
@@ -1699,21 +1638,17 @@ local script = G2L["68"];
 			end
 		end
 	
-	
 		scrollingFrame.CanvasSize = UDim2.new(0, maxWidth + padding, 0, maxHeight + padding)
 	end
-	
 	
 	local function updateSizes()
 		resizetxtboxyey()
 		resizeCanvas()
 	end
 	
-	
 	textBox:GetPropertyChangedSignal("Text"):Connect(updateSizes)
 	scrollingFrame.ChildAdded:Connect(resizeCanvas)
 	scrollingFrame.ChildRemoved:Connect(resizeCanvas)
-	
 	
 	updateSizes()
 	
@@ -1874,37 +1809,9 @@ local script = G2L["7e"];
 	
 end;
 task.spawn(C_7e);
--- StarterGui.Encton.Main.ExecutorFrame.Client-Side.LocalScript
-local function C_82()
-local script = G2L["82"];
-	local executiontype = script.Parent.Parent.Parent.Parent.ExecutionType
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		executiontype.Value = 0
-		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {BackgroundColor3 = Color3.new(0.094, 0.094, 0.094)}):Play()
-		game:GetService("TweenService"):Create(script.Parent.Parent["Server-Side"], TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.In, 0, false, 0), {BackgroundColor3 = Color3.new(0.192, 0.192, 0.192)}):Play()
-	end)
-end;
-task.spawn(C_82);
--- StarterGui.Encton.Main.ExecutorFrame.Server-ClientButtons
-local function C_83()
-local script = G2L["83"];
-	-- closed : Color3.new(49, 49, 49)
-	-- selected : Color3.new(24, 24, 24)
-	
-	local cs = script.Parent["Client-Side"]
-	local executiontype = script.Parent.Parent.Parent.ExecutionType
-	
-	
-	cs.MouseButton1Click:Connect(function()
-		game:GetService("TweenService"):Create(cs, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {BackgroundColor3 = Color3.new(24, 24, 24)}):Play()
-		executiontype.Value = 0
-	end)
-end;
-task.spawn(C_83);
 -- StarterGui.Encton.Main.ExecutorFrame.SaveEditor
-local function C_84()
-local script = G2L["84"];
+local function C_7f()
+local script = G2L["7f"];
 	-- file name
 	local fileName = "EnctonWorkspace/EnctonEditorText.lua"
 	
@@ -1922,10 +1829,10 @@ local script = G2L["84"];
 	end)
 	
 end;
-task.spawn(C_84);
+task.spawn(C_7f);
 -- StarterGui.Encton.Main.ButtonHandler
-local function C_85()
-local script = G2L["85"];
+local function C_80()
+local script = G2L["80"];
 	-- btn tween
 	local function tween(object, mode)
 		if mode == "open" then
@@ -1995,19 +1902,19 @@ local script = G2L["85"];
 		spage.Visible = false
 	end)
 end;
-task.spawn(C_85);
+task.spawn(C_80);
 -- StarterGui.Encton.Main.Close.LocalScript
-local function C_87()
-local script = G2L["87"];
+local function C_82()
+local script = G2L["82"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Main.Visible = false
 		script.Parent.Parent.Parent.OpenEncton.Visible = true
 	end)
 end;
-task.spawn(C_87);
+task.spawn(C_82);
 -- StarterGui.Encton.Main.SettingsFrame.UnlockFPS.EnableDisable.LocalScript
-local function C_8f()
-local script = G2L["8f"];
+local function C_8a()
+local script = G2L["8a"];
 	-- close id : 6031068429
 	-- open id : 6031068430
 	--open color : 0, 0.807843, 0
@@ -2029,19 +1936,19 @@ local script = G2L["8f"];
 		end
 	end)
 end;
-task.spawn(C_8f);
+task.spawn(C_8a);
 -- StarterGui.Encton.Main.Notice.agreebtn.LocalScript
-local function C_a1()
-local script = G2L["a1"];
+local function C_9c()
+local script = G2L["9c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Notice.Visible = false
 		script.Parent.Parent.Parent.background.Visible = false
 	end)
 end;
-task.spawn(C_a1);
+task.spawn(C_9c);
 -- StarterGui.Encton.OpenEncton.LocalScript
-local function C_a5()
-local script = G2L["a5"];
+local function C_a0()
+local script = G2L["a0"];
 	script.Parent.MouseEnter:Connect(function()
 		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 43,0, 43)}):Play()
 	end)
@@ -2055,6 +1962,6 @@ local script = G2L["a5"];
 		script.Parent.Parent.Main.Visible = true
 	end)
 end;
-task.spawn(C_a5);
+task.spawn(C_a0);
 
 return G2L["1"], require;
