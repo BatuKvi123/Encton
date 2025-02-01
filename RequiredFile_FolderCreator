@@ -32,5 +32,5 @@ end
 
 --Encton Auto Check Key File
 if not isfile("EnctonSettings/AutoCheckKey.lua") then
-	writefile("EnctonSettings/AutoCheckKey.lua", "false")
+	writefile("EnctonSettings/AutoCheckKey.lua", "Disabled")
 end
