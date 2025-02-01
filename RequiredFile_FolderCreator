@@ -19,3 +19,8 @@ end
 if not isfile("EnctonWorkspace/EnctonKeyInput.lua") then
 	writefile("EnctonWorkspace/EnctonKeyInput.lua", "")
 end
+
+--Encton KeyInput Premium File
+if not isfile("EnctonWorkspace/EnctonKeyInputPremium.lua") then
+	writefile("EnctonWorkspace/EnctonKeyInputPremium.lua", "")
+end
