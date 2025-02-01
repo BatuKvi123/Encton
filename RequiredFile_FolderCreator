@@ -10,6 +10,11 @@ if not isfolder("EnctonWorkspace") then
 makefolder("EnctonWorkspace")
 end
 
+--Encton Settings Folder
+if not isfolder("EnctonSettings") then
+makefolder("EnctonSettings")
+end
+
 --EnctonEditorText File
 if not isfile("EnctonWorkspace/EnctonEditorText.lua") then
 writefile("EnctonWorkspace/EnctonEditorText.lua", "")
@@ -23,4 +28,9 @@ end
 --Encton KeyInput Premium File
 if not isfile("EnctonWorkspace/EnctonKeyInputPremium.lua") then
 	writefile("EnctonWorkspace/EnctonKeyInputPremium.lua", "")
+end
+
+--Encton Auto Check Key File
+if not isfile("EnctonSettings/AutoCheckKey.lua") then
+	writefile("EnctonSettings/AutoCheckKey.lua", "")
 end
