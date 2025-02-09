@@ -335,79 +335,6 @@ G2L["25"]["Position"] = UDim2.new(0.0604, 0, 0.125, 0);
 -- StarterGui.EnctonLastVersion.Main.HomeFrame.GreetPart.nameandrank.LocalScript
 G2L["26"] = Instance.new("LocalScript", G2L["25"]);
 
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo
-G2L["27"] = Instance.new("Frame", G2L["21"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["27"]["Size"] = UDim2.new(0, 149, 0, 56);
-G2L["27"]["Position"] = UDim2.new(0.50794, 0, 0.0121, 0);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Name"] = [[KeyInfo]];
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.UIStroke
-G2L["28"] = Instance.new("UIStroke", G2L["27"]);
-G2L["28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["28"]["Thickness"] = 1.5;
-G2L["28"]["Color"] = Color3.fromRGB(101, 101, 101);
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.UICorner
-G2L["29"] = Instance.new("UICorner", G2L["27"]);
-
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.keytime
-G2L["2a"] = Instance.new("TextLabel", G2L["27"]);
-G2L["2a"]["TextWrapped"] = true;
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextSize"] = 20;
-G2L["2a"]["TextScaled"] = true;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["BackgroundTransparency"] = 1;
-G2L["2a"]["Size"] = UDim2.new(0, 131, 0, 18);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[Key Expires in: nan]];
-G2L["2a"]["Name"] = [[keytime]];
-G2L["2a"]["Position"] = UDim2.new(0.0604, 0, 0.125, 0);
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.Bar
-G2L["2b"] = Instance.new("Frame", G2L["27"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["Size"] = UDim2.new(0, 131, 0, 10);
-G2L["2b"]["Position"] = UDim2.new(0.0604, 0, 0.55357, 0);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Name"] = [[Bar]];
-G2L["2b"]["BackgroundTransparency"] = 0.9;
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.Bar.UICorner
-G2L["2c"] = Instance.new("UICorner", G2L["2b"]);
-
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.LoadBar
-G2L["2d"] = Instance.new("Frame", G2L["27"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["Size"] = UDim2.new(0, 95, 0, 10);
-G2L["2d"]["Position"] = UDim2.new(0.0604, 0, 0.55357, 0);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Name"] = [[LoadBar]];
-G2L["2d"]["BackgroundTransparency"] = 0.9;
-
-
--- StarterGui.EnctonLastVersion.Main.HomeFrame.KeyInfo.LoadBar.UICorner
-G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
-
-
-
 -- StarterGui.EnctonLastVersion.Main.HomeFrame.SavedScripts
 G2L["2f"] = Instance.new("Frame", G2L["21"]);
 G2L["2f"]["BorderSizePixel"] = 0;
@@ -1452,11 +1379,7 @@ task.spawn(C_20);
 -- StarterGui.EnctonLastVersion.Main.HomeFrame.GreetPart.nameandrank.LocalScript
 local function C_26()
 local script = G2L["26"];
-	script.Parent.Text = "Greetings, "..game.Players.LocalPlayer.Name.."!\nRank: Guest"
-	
-	if game.Players.LocalPlayer.Name == "newAccount123Lols" then
-		script.Parent.Text = "Greetings, "..game.Players.LocalPlayer.Name.."!\nRank: Owner"
-	end
+	script.Parent.Text = "Welcome to Encton, "..game.Players.LocalPlayer.Name.."!"
 end;
 task.spawn(C_26);
 -- StarterGui.EnctonLastVersion.Main.CloudFrame.SearchBtn.LocalScript
