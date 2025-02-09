@@ -1259,82 +1259,6 @@ G2L["89"]["Position"] = UDim2.new(0.79288, 0, 0.1, 0);
 G2L["8a"] = Instance.new("LocalScript", G2L["89"]);
 
 
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey
-G2L["8b"] = Instance.new("Frame", G2L["83"]);
-G2L["8b"]["BorderSizePixel"] = 0;
-G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["8b"]["Size"] = UDim2.new(0, 309, 0, 50);
-G2L["8b"]["Position"] = UDim2.new(0, 0, 0.27823, 0);
-G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8b"]["Name"] = [[AutoCheckKey]];
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.UIStroke
-G2L["8c"] = Instance.new("UIStroke", G2L["8b"]);
-G2L["8c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["8c"]["Thickness"] = 2.5;
-G2L["8c"]["Color"] = Color3.fromRGB(68, 68, 68);
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.UICorner
-G2L["8d"] = Instance.new("UICorner", G2L["8b"]);
-
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.title
-G2L["8e"] = Instance.new("TextLabel", G2L["8b"]);
-G2L["8e"]["TextWrapped"] = true;
-G2L["8e"]["BorderSizePixel"] = 0;
-G2L["8e"]["TextSize"] = 14;
-G2L["8e"]["TextScaled"] = true;
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["BackgroundTransparency"] = 1;
-G2L["8e"]["Size"] = UDim2.new(0, 130, 0, 17);
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8e"]["Text"] = [[Auto Check Key]];
-G2L["8e"]["Name"] = [[title]];
-G2L["8e"]["Position"] = UDim2.new(0.02265, 0, 0.14, 0);
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.desc
-G2L["8f"] = Instance.new("TextLabel", G2L["8b"]);
-G2L["8f"]["TextWrapped"] = true;
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["TextSize"] = 14;
-G2L["8f"]["TextTransparency"] = 0.8;
-G2L["8f"]["TextScaled"] = true;
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["BackgroundTransparency"] = 1;
-G2L["8f"]["Size"] = UDim2.new(0, 189, 0, 24);
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Text"] = [[Checks your key automaticly.]];
-G2L["8f"]["Name"] = [[desc]];
-G2L["8f"]["Position"] = UDim2.new(0.04531, 0, 0.48, 0);
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.EnableDisable
-G2L["90"] = Instance.new("ImageButton", G2L["8b"]);
-G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["90"]["ImageColor3"] = Color3.fromRGB(189, 0, 0);
-G2L["90"]["Image"] = [[rbxassetid://6031068429]];
-G2L["90"]["Size"] = UDim2.new(0, 41, 0, 40);
-G2L["90"]["BackgroundTransparency"] = 1;
-G2L["90"]["Name"] = [[EnableDisable]];
-G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Position"] = UDim2.new(0.79288, 0, 0.1, 0);
-
-
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.EnableDisable.LocalScript
-G2L["91"] = Instance.new("LocalScript", G2L["90"]);
-
-
-
 -- StarterGui.EnctonLastVersion.Main.background
 G2L["92"] = Instance.new("Frame", G2L["2"]);
 G2L["92"]["Visible"] = false;
@@ -1669,7 +1593,6 @@ local function C_6c()
 local script = G2L["6c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.TextHolder.Input.Text)()
-		warn("Mode ClientSide CS")
 	end)
 end;
 task.spawn(C_6c);
@@ -1944,39 +1867,6 @@ local script = G2L["8a"];
 	end)
 end;
 task.spawn(C_8a);
--- StarterGui.EnctonLastVersion.Main.SettingsFrame.AutoCheckKey.EnableDisable.LocalScript
-local function C_91()
-local script = G2L["91"];
-	-- close id : 6031068429
-	-- open id : 6031068430
-	--open color : 0, 0.807843, 0
-	-- close color : 188, 0, 0
-	
-	if readfile("EnctonSettings/AutoCheckKey.lua") == "Enabled" then
-		script.Parent.Image = "rbxassetid://6031068430"
-		script.Parent.ImageColor3 = Color3.new(0, 0.807843, 0)
-	elseif readfile("EnctonSettings/AutoCheckKey.lua") == "Disabled" then
-		script.Parent.Image = "rbxassetid://6031068429"
-		script.Parent.ImageColor3 = Color3.new(188, 0, 0)
-	end
-	
-	local toggle = false
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if toggle == false then
-			toggle = true
-			script.Parent.Image = "rbxassetid://6031068430"
-			script.Parent.ImageColor3 = Color3.new(0, 0.807843, 0)
-			writefile("EnctonSettings/AutoCheckKey.lua", "Enabled")
-		else
-			toggle = false
-			script.Parent.Image = "rbxassetid://6031068429"
-			script.Parent.ImageColor3 = Color3.new(188, 0, 0)
-			writefile("EnctonSettings/AutoCheckKey.lua", "Disabled")
-		end
-	end)
-end;
-task.spawn(C_91);
 -- StarterGui.EnctonLastVersion.Main.Notice.agreebtn.LocalScript
 local function C_9b()
 local script = G2L["9b"];
