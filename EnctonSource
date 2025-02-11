@@ -8,7 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/ref
 local G2L = {};
 
 -- StarterGui.EnctonLastVersion
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", gethui());
 G2L["1"]["Name"] = [[EnctonLastVersion]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
