@@ -34,3 +34,7 @@ end
 if not isfile("EnctonSettings/AutoCheckKey.lua") then
 	writefile("EnctonSettings/AutoCheckKey.lua", "Disabled")
 end
+
+if not isfile("EnctonWorkspace/popup.lua") then
+writefile("EnctonWorkspace/popup.lua", "Disabled")
+end
