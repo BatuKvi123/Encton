@@ -1,4 +1,4 @@
--- just some couple of things here, ignore this part :D
+--file/folder
 
 --Encton Sc Folder
 if not isfolder("Enctonsc") then
@@ -33,8 +33,4 @@ end
 --Encton Auto Check Key File
 if not isfile("EnctonSettings/AutoCheckKey.lua") then
 	writefile("EnctonSettings/AutoCheckKey.lua", "Disabled")
-end
-
-if not isfile("EnctonWorkspace/popup.lua") then
-writefile("EnctonWorkspace/popup.lua", "Disabled")
 end
