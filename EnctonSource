@@ -3,12 +3,19 @@ setreadonly(client, false);
 client.enableautoexec()
 setreadonly(client, true);
 
--- [[ Scripts ]] --
+-- [[ Other ]] --
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator"))()
+
+-- // Anti-Multi GUIS
+if game:GetService("CoreGui"):FindFirstChild("EnctonLastVersion") then
+game:GetService("CoreGui"):FindFirstChild("EnctonLastVersion"):Destroy()
+end
+-- [[ Scripts ]] --
+
 local G2L = {};
 
 -- StarterGui.EnctonLastVersion
-G2L["1"] = Instance.new("ScreenGui", gethui());
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["Name"] = [[EnctonLastVersion]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
