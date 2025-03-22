@@ -8,6 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/ref
 
 -- // Anti-Multi GUIS
 if game:GetService("CoreGui"):FindFirstChild("EnctonLastVersion") then
+print("Encton GUI got cloned on CoreGui. Deleting...")
 game:GetService("CoreGui"):FindFirstChild("EnctonLastVersion"):Destroy()
 end
 -- [[ Scripts ]] --
