@@ -6,6 +6,10 @@ setreadonly(client, true);
 -- [[ Other ]] --
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator"))()
 
+if not isfile("Assets/NoParentTestFile.lua") then
+writefile("Assets/NoParentTestFile.lua", "this is an No parent test made by encton. we gonna use our files like this if its working. delete this file. And no this doesnt cause an mass creating!")
+end
+
 -- // Anti-Multi GUIS
 if game:GetService("CoreGui"):FindFirstChild("EnctonLastVersion") then
 print("Encton GUI got cloned on CoreGui. Deleting...")
