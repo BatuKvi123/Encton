@@ -1,7 +1,14 @@
--- [[ Initialization ]] --
+-- [[ Internal Functions ]] --
+local _enableautoexec = clonefunction( client.enableautoexec )
 setreadonly(client, false);
-client.enableautoexec()
+client.enableautoexec = nil
+client.execute = nil
 setreadonly(client, true);
+
+getgenv().client = nil
+
+-- [[ Autoexecute ]] --
+_enableautoexec()
 
 -- [[ Other ]] --
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator"))()
