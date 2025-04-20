@@ -1456,45 +1456,27 @@ local script = G2L["4d"];
 		end
 	
 	-- start bug fix
-		local HttpService = game:GetService("HttpService")
-local inputText = script.Parent.Parent.Input.Text
-local url = "https://scriptblox.com/api/script/search?q=" .. inputText
-
-local success, response = pcall(function()
-	return game:HttpGetAsync(url)
-end)
-
-if success then
-	local successDecode, decoded = pcall(function()
-		return HttpService:JSONDecode(response)
-	end)
-
-	if successDecode and decoded and decoded.result and decoded.result.scripts then
+local url = "https://scriptblox.com/api/script/search?q="..script.Parent.Parent.Input.Text
+		local response = game:HttpGetAsync(url)
+		local decoded = http:JSONDecode(response)
 		for _, script in pairs(decoded.result.scripts) do
-			if script.isUniversal == true then
-				if script.isPatched == true then
+			if(script.isUniversal == true) then
+				if(script.isPatched == true) then
 					AddTab("rbxassetid://11886780412", script.title, script.script, "Is Patched: True")
 				else
 					AddTab("rbxassetid://11886780412", script.title, script.script, "Is Patched: False")
-				end
-			else
-				local thumbUrl = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..script.game.gameId.."&fmt=png&wd=420&ht=420"
-				if script.isPatched == true then
-					AddTab(thumbUrl, script.title, script.script, "Is Patched: True")
+					end -- is patched end
 				else
-					AddTab(thumbUrl, script.title, script.script, "Is Patched: False")
-				end
-			end
-		end
-		loadedscripts.Text = "Loaded Scripts: " .. decoded.result.totalPages
-	else
-		warn("json decode declined: ", decoded)
-		loadedscripts.Text = "Failed to decode json"
-	end
-else
-	print("Http error: ", response)
-	loadedscripts.Text = "Failed to get scripts"
-end
+				if(script.isPatched == true) then
+					AddTab("https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..script.game.gameId.."&fmt=png&wd=420&ht=420", script.title, script.script, "Is Patched: True")
+				else
+					AddTab("https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..script.game.gameId.."&fmt=png&wd=420&ht=420", script.title, script.script, "Is Patched: False")
+					end -- is patched end
+				end -- is universal end
+	
+		end -- for _, script end
+		loadedscripts.Text = "Loaded Scripts: "..decoded.result.totalPages
+	end)
 -- end bug fix
 	
 	
