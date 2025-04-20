@@ -1452,6 +1452,7 @@ local script = G2L["4d"];
 		for _, child in ipairs(script.Parent.Parent.scrollcloud:GetChildren()) do
 			if child:IsA("Frame") then
 				child:Destroy()
+print("debug: destroyed frames")
 			end
 		end
 	
