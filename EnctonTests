@@ -1,10 +1,5 @@
 --v1
 
--- [[ Initialization ]] --
-setreadonly(client, false);
-client.enableautoexec()
-setreadonly(client, true);
-
 -- [[ Other ]] --
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator"))()
 
