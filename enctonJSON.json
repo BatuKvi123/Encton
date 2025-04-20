@@ -1,4 +1,4 @@
 {
-  "ui": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/EnctonSource\"))()",
+  "ui": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/EnctonTests\"))()",
   "version": "2.669.664"
 }
