@@ -1,22 +1,6 @@
 -- Encton New UI.
 
--- [[ Client ]] --
-local _enableautoexec = clonefunction( client.enableautoexec )
-setreadonly(client, false);
-client.enableautoexec = nil
-client.execute = nil
-setreadonly(client, true);
 
-getgenv().client = nil
-
--- [[ Auto Execute ]] --
-local AutoExecuteContent = readfile("EnctonSettings/AutoExecute.lua")
-
-if AutoExecuteContent == "Enabled" then
-_enableautoexec()
-else
-return false
-end
 
 local G2L = {};
 
