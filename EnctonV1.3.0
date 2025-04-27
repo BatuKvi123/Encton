@@ -3438,7 +3438,6 @@ local function C_a1()
 		ts:Create(script.Parent.Parent.Parent.ToggleAE.UIStroke, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0), {
 			Color = (newState == "Enabled") and Color3.fromRGB(5, 159, 0) or Color3.fromRGB(80, 0, 0)
 		}):Play()
-		print(newState)
 	end)
 
 end;
