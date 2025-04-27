@@ -712,11 +712,11 @@ G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["44"]["TextScaled"] = true;
 G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["44"]["TextColor3"] = Color3.fromRGB(125, 125, 125);
+G2L["44"]["TextColor3"] = Color3.fromRGB(79, 204, 45);
 G2L["44"]["BackgroundTransparency"] = 1;
 G2L["44"]["Size"] = UDim2.new(0, 200, 0, 12);
 G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Text"] = [[Requires Key]];
+G2L["44"]["Text"] = [[Already Having an Key]];
 G2L["44"]["Name"] = [[status]];
 G2L["44"]["Position"] = UDim2.new(0.03636, 0, 0.75439, 0);
 
