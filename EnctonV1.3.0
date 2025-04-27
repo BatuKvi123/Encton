@@ -4391,7 +4391,7 @@ local function C_f4()
 
 		local tabButton = button:FindFirstChild("clicktabbtn")
 		if tabButton then
-			tabButton.MouseButton1Click:Connect(function()
+			tabButton.Activated:Connect(function()
 				switchtotab(tabId)
 
 				for _, v in ipairs(tabbtnsparent:GetChildren()) do
@@ -4410,7 +4410,7 @@ local function C_f4()
 
 		local closeButton = button:FindFirstChild("CloseTab")
 		if closeButton then
-			closeButton.MouseButton1Click:Connect(function()
+			closeButton.Activated:Connect(function()
 				tabData[tabId] = nil
 				tabButtons[tabId] = nil
 				button:Destroy()
@@ -4459,7 +4459,7 @@ local function C_f4()
 		end
 	end
 
-	newtabbtn.MouseButton1Click:Connect(createtab)
+	newtabbtn.Activated:Connect(createtab)
 	createtab()
 
 end;
