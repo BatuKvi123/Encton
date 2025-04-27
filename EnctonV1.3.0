@@ -697,13 +697,45 @@ G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["44"]["TextScaled"] = true;
 G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["44"]["TextColor3"] = Color3.fromRGB(125, 125, 125);
+G2L["44"]["TextColor3"] = Color3.fromRGB(50, 168, 82);
 G2L["44"]["BackgroundTransparency"] = 1;
 G2L["44"]["Size"] = UDim2.new(0, 200, 0, 12);
 G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["44"]["Text"] = [[Requires Key]];
 G2L["44"]["Name"] = [[status]];
 G2L["44"]["Position"] = UDim2.new(0.03636, 0, 0.75439, 0);
+
+-- Check if keyless and change the text
+
+local link = "https://raw.githubusercontent.com/BatuKvi123/EnctonKeySystem/refs/heads/main/isKeyless.json"
+local response = http.request({
+    Url = link,
+    Method = "GET"
+})
+
+if response then
+    if response.StatusCode == 200 and response.Body then
+        local HttpService = game:GetService("HttpService")
+        local success, decoded = pcall(function()
+            return HttpService:JSONDecode(response.Body)
+        end)
+
+        if success then
+            local keyless = decoded.keyless
+            if keyless == true then
+                G2L["44"]["Text"] = [[KEYLESS!]]
+            else
+
+            end
+        else
+	print("error: " .. decoded)
+        end
+    else
+        print("error: " .. response.StatusCode)
+    end
+else
+    print("Failed to make HTTP request.")
+end
 
 
 -- StarterGui.EnctonV1.3.0.MainFrame.HomeFrame.UserInfo.UpgradePlanBttn
