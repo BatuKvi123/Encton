@@ -1,3 +1,4 @@
+--[[
 -- [[ Client ]] --
 local _enableautoexec = clonefunction( client.enableautoexec )
 setreadonly(client, false);
@@ -15,6 +16,7 @@ _enableautoexec()
 else
 return false
 end
+--]]
 
 -- Instances: 282 | Scripts: 32 | Modules: 1 | Tags: 0
 local G2L = {};
