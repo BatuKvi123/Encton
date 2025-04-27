@@ -1,6 +1,7 @@
 -- Encton New UI.
 
-
+-- [[ File Loading ]] --
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BatuKvi123/Encton/refs/heads/main/RequiredFile_FolderCreator'))()
 
 local G2L = {};
 
