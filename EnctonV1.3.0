@@ -1994,6 +1994,7 @@ G2L["c6"]["ScrollBarThickness"] = 5;
 
 -- StarterGui.EnctonV1.3.0.MainFrame.EditorFrame.ScriptBoxHolder.bg.Source
 G2L["c7"] = Instance.new("TextBox", G2L["c6"]);
+G2L["c7"]["CursorPosition"] = -1;
 G2L["c7"]["Name"] = [[Source]];
 G2L["c7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["c7"]["PlaceholderColor3"] = Color3.fromRGB(205, 205, 205);
@@ -2380,12 +2381,12 @@ G2L["ec"]["TextSize"] = 14;
 G2L["ec"]["TextScaled"] = true;
 G2L["ec"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["ec"]["ZIndex"] = 99999999;
-G2L["ec"]["Size"] = UDim2.new(0, 130, 0, 40);
+G2L["ec"]["Size"] = UDim2.new(0, 121, 0, 35);
 G2L["ec"]["BackgroundTransparency"] = 0.5;
 G2L["ec"]["Name"] = [[clicktabbtn]];
 G2L["ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["ec"]["Text"] = [[Tab 1]];
+G2L["ec"]["Position"] = UDim2.new(-0, 0, -0, 0);
 
 
 -- StarterGui.EnctonV1.3.0.MainFrame.EditorFrame.TabsHolder.scrolltabshold.TabTemplate.clicktabbtn.UIPadding
@@ -4428,7 +4429,7 @@ local function C_f3()
 		button.BackgroundColor3 = DefaultColor
 
 		-- Setup click button
-		local clickButton = button:FindFirstChild("cli")
+		local clickButton = button:FindFirstChild("clicktabbtn")
 		if clickButton then
 			clickButton.Activated:Connect(function()
 				SwitchToTab(tabId)
