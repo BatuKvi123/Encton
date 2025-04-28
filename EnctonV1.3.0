@@ -2863,7 +2863,7 @@ G2L["11c"]["CornerRadius"] = UDim.new(0, 4);
 
 -- StarterGui.EnctonV1.3.0_Fixes.UIScale
 G2L["11d"] = Instance.new("UIScale", G2L["1"]);
-G2L["11d"]["Scale"] = 0.9;
+G2L["11d"]["Scale"] = 0.73;
 
 
 -- Require G2L wrapper
