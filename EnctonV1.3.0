@@ -2892,8 +2892,6 @@ G2L_MODULES[G2L["94"]] = {
 
 		if not isfolder(savedPath) then
 			makefolder(savedPath)
-		else
-			print()
 		end
 
 		function ssm:RefreshSaves()
@@ -2904,10 +2902,12 @@ G2L_MODULES[G2L["94"]] = {
 			end
 
 			for _, filePath in pairs(listfiles(savedPath)) do
+				local displayName = filePath:gsub("\\", "/"):gsub("^Enctonsc/", "")
+
 				local newButton = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
 				newButton.Visible = true
 				newButton.Parent = ScrollingFrame
-				newButton.Text = filePath:gsub("^Enctonsc/", "")
+				newButton.Text = displayName
 				newButton.Name = filePath
 
 				newButton.MouseButton1Click:Connect(function()
@@ -2918,7 +2918,6 @@ G2L_MODULES[G2L["94"]] = {
 
 		function ssm:AddSave(name, source)
 			writefile(savePath .. name, source)
-
 			self:RefreshSaves()
 		end
 
@@ -3369,10 +3368,12 @@ local function C_93()
 	end
 
 	for _, fileName in pairs(listfiles(savedPath)) do
+		local displayName = fileName:gsub("\\", "/"):gsub("^Enctonsc/", "")
+
 		local savedtemp = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
 		savedtemp.Visible = true
 		savedtemp.Parent = ScrollingFrame
-		savedtemp.Text = fileName:gsub("^Enctonsc/", "")
+		savedtemp.Text = displayName
 		savedtemp.Name = fileName
 
 		savedtemp.MouseButton1Click:Connect(function()
@@ -3415,8 +3416,6 @@ local function C_93()
 		if isfile(fileName) then
 			delfile(fileName)
 			require(script.Parent.SavedScriptModule):RefreshSaves()
-			SelectedScriptVal.Value = ""
-			script.Parent.Funcs.Selected.Text = "Selected..."
 		end
 	end)
 
