@@ -1994,7 +1994,6 @@ G2L["c6"]["ScrollBarThickness"] = 5;
 
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.EditorFrame.ScriptBoxHolder.bg.Source
 G2L["c7"] = Instance.new("TextBox", G2L["c6"]);
-G2L["c7"]["CursorPosition"] = -1;
 G2L["c7"]["Name"] = [[Source]];
 G2L["c7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["c7"]["PlaceholderColor3"] = Color3.fromRGB(205, 205, 205);
@@ -2899,25 +2898,21 @@ G2L_MODULES[G2L["94"]] = {
 
 		function ssm:RefreshSaves()
 			for _, v in pairs(ScrollingFrame:GetChildren()) do
-				if v:IsA("TextButton") --[[ and v.Name ~= "SavedScriptName" --]] then
+				if v:IsA("TextButton") then
 					v:Destroy()
 				end
 			end
 
 			for _, filePath in pairs(listfiles(savedPath)) do
-				local scriptName = filePath:match(savedPath .. "/?(.*)")
+				local newButton = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
+				newButton.Visible = true
+				newButton.Parent = ScrollingFrame
+				newButton.Text = filePath
+				newButton.Name = filePath
 
-				if scriptName and scriptName ~= "" then
-					local newButton = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
-					newButton.Visible = true
-					newButton.Parent = ScrollingFrame
-					newButton.Text = scriptName
-					newButton.Name = scriptName
-
-					newButton.MouseButton1Click:Connect(function()
-						SelectedScriptVal.Value = scriptName
-					end)
-				end
+				newButton.MouseButton1Click:Connect(function()
+					SelectedScriptVal.Value = filePath
+				end)
 			end
 		end
 
@@ -2929,10 +2924,10 @@ G2L_MODULES[G2L["94"]] = {
 
 		function ssm:LoadSavedFile()
 			local fileName = tostring(SelectedScriptVal.Value)
-			if isfile(savePath .. fileName) then
-				return readfile(savePath .. fileName)
+			if isfile(fileName) then
+				return readfile(fileName)
 			else
-				return nil, "File not found! (" .. savePath .. fileName .. ")"
+				return nil, "File not found! (" .. fileName .. ")"
 			end
 		end
 
@@ -3376,29 +3371,23 @@ local function C_93()
 	end
 
 	for _, fileName in pairs(listfiles(savedPath)) do
-		local scriptName = fileName:match(savedPath .. "(.*)")
-
-		if scriptName:sub(1, 1) == "/" then
-			scriptName = scriptName:sub(2)
-		end
-
 		local savedtemp = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
 		savedtemp.Visible = true
 		savedtemp.Parent = ScrollingFrame
-		savedtemp.Text = scriptName
-		savedtemp.Name = scriptName
+		savedtemp.Text = fileName
+		savedtemp.Name = fileName
 
 		savedtemp.MouseButton1Click:Connect(function()
-			SelectedScriptVal.Value = scriptName
+			SelectedScriptVal.Value = fileName
 		end)
 	end
 
 	local function loadSavedFile()
 		local fileName = tostring(SelectedScriptVal.Value)
-		if isfile(savePath .. fileName) then
-			return readfile(savePath .. fileName)
+		if isfile(fileName) then
+			return readfile(fileName)
 		else
-			return nil, "File not found! (" .. savePath .. fileName .. ")"
+			return nil, "File not found! (" .. fileName .. ")"
 		end
 	end
 
@@ -3428,12 +3417,13 @@ local function C_93()
 
 	script.Parent.Funcs.DeleteSaved.MouseButton1Click:Connect(function()
 		local fileName = tostring(SelectedScriptVal.Value)
-		if isfile(savePath .. fileName) then
-			delfile(savePath .. fileName)
-			ScrollingFrame:FindFirstChild(fileName):Destroy()
+		if isfile(fileName) then
+			delfile(fileName)
+			--ScrollingFrame:FindFirstChild(fileName):Destroy()
 			require(script.Parent.SavedScriptModule):RefreshSaves()
 		end
 	end)
+
 end;
 task.spawn(C_93);
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.SettingsFrame.scr.AEToggle.ToggleAE.toggleclick.LocalScript
