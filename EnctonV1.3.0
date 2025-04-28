@@ -2907,7 +2907,7 @@ G2L_MODULES[G2L["94"]] = {
 				local newButton = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
 				newButton.Visible = true
 				newButton.Parent = ScrollingFrame
-				newButton.Text = filePath
+				newButton.Text = filePath:gsub("^Enctonsc/", "")
 				newButton.Name = filePath
 
 				newButton.MouseButton1Click:Connect(function()
@@ -3366,15 +3366,13 @@ local function C_93()
 
 	if not isfolder(savedPath) then
 		makefolder(savedPath)
-	else
-		print()
 	end
 
 	for _, fileName in pairs(listfiles(savedPath)) do
 		local savedtemp = ScrollingFrame.SAVED_TEMP.SavedScriptName:Clone()
 		savedtemp.Visible = true
 		savedtemp.Parent = ScrollingFrame
-		savedtemp.Text = fileName
+		savedtemp.Text = fileName:gsub("^Enctonsc/", "")
 		savedtemp.Name = fileName
 
 		savedtemp.MouseButton1Click:Connect(function()
@@ -3395,7 +3393,6 @@ local function C_93()
 		local savedfile, err = loadSavedFile()
 		if savedfile then
 			loadstring(savedfile)()
-		else
 		end
 	end)
 
@@ -3403,7 +3400,6 @@ local function C_93()
 		local savedfile, err = loadSavedFile()
 		if savedfile then
 			script.Parent.Parent.EditorFrame.ScriptBoxHolder.bg.Source.Text = savedfile
-		else
 		end
 	end)
 
@@ -3411,7 +3407,6 @@ local function C_93()
 		local savedfile, err = loadSavedFile()
 		if savedfile then
 			setclipboard(savedfile)
-		else
 		end
 	end)
 
@@ -3419,8 +3414,9 @@ local function C_93()
 		local fileName = tostring(SelectedScriptVal.Value)
 		if isfile(fileName) then
 			delfile(fileName)
-			--ScrollingFrame:FindFirstChild(fileName):Destroy()
 			require(script.Parent.SavedScriptModule):RefreshSaves()
+			SelectedScriptVal.Value = ""
+			script.Parent.Funcs.Selected.Text = "Selected..."
 		end
 	end)
 
