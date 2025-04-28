@@ -3378,6 +3378,7 @@ local function C_93()
 
 		savedtemp.MouseButton1Click:Connect(function()
 			SelectedScriptVal.Value = fileName
+			script.Parent.Funcs.Selected.Text = displayName
 		end)
 	end
 
