@@ -701,11 +701,11 @@ G2L["44"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["44"]["TextScaled"] = true;
 G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["44"]["TextColor3"] = Color3.fromRGB(125, 125, 125);
+G2L["44"]["TextColor3"] = Color3.fromRGB(0, 194, 62);
 G2L["44"]["BackgroundTransparency"] = 1;
 G2L["44"]["Size"] = UDim2.new(0, 200, 0, 12);
 G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Text"] = [[Requires Key]];
+G2L["44"]["Text"] = [[Already got an key]];
 G2L["44"]["Name"] = [[status]];
 G2L["44"]["Position"] = UDim2.new(0.03636, 0, 0.75439, 0);
 
@@ -3430,6 +3430,7 @@ local function C_93()
 		local fileName = tostring(SelectedScriptVal.Value)
 		if isfile(savePath .. fileName) then
 			delfile(savePath .. fileName)
+			ScrollingFrame:FindFirstChild(SelectedScriptVal.Value):Destroy()
 			require(script.Parent.SavedScriptModule):RefreshSaves()
 		end
 	end)
@@ -4484,13 +4485,17 @@ local function C_f4()
 
 		for _, v in ipairs(tabbtnsparent:GetChildren()) do
 			if v:IsA("TextButton") then
-				v.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+				game:GetService("TweenService"):Create(v, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {
+					BackgroundColor3 = Color3.fromRGB(21,21,21)
+				}):Play()
 			end
 		end
 
 		local btn = tabButtons[tabCount]
 		if btn then
-			btn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			game:GetService("TweenService"):Create(btn, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {
+				BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			}):Play()
 		end
 	end
 
@@ -4565,6 +4570,22 @@ local function C_101()
 	local cTemp = scr:WaitForChild("CONSOLE_TEMP")
 	local output = cTemp:WaitForChild("CONSOLE_OUTPUT")
 
+	script.Parent.ClearOutputs.MouseButton1Click:Connect(function()
+		for i,v in pairs(script.Parent.scr:GetChildren()) do
+			if v:IsA("TextLabel") then
+				v:Destroy()
+			end
+		end
+		errorCount = 0
+		warnCount = 0
+		outputCount = 0
+
+		script.Parent.ErrorCount.Text = "Errors: 0"
+		script.Parent.WarnCount.Text = "Warns: 0"
+		script.Parent.OutputCount.Text = "Outputs: 0"
+	end)
+
+
 	local function create(OUTPUT_TEXT, OUTPUT_TYPE)
 		local new = output:Clone()
 		new.Parent = scr
@@ -4608,21 +4629,6 @@ local function C_101()
 		create(os.date("%H:%M:%S") .. " -- " .. message, messageType)
 	end)
 
-
-	script.Parent.ClearOutputs.MouseButton1Click:Connect(function()
-		for i,v in pairs(script.Parent.scr:GetChildren()) do
-			if v:IsA("TextLabel") then
-				v:Destroy()
-			end
-		end
-		errorCount = 0
-		warnCount = 0
-		outputCount = 0
-
-		script.Parent.ErrorCount.Text = "Errors: 0"
-		script.Parent.WarnCount.Text = "Warns: 0"
-		script.Parent.OutputCount.Text = "Outputs: 0"
-	end)
 end;
 task.spawn(C_101);
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.ConsoleFrame.ClearOutputs.LocalScript
