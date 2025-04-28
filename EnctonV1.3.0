@@ -3430,7 +3430,7 @@ local function C_93()
 		local fileName = tostring(SelectedScriptVal.Value)
 		if isfile(savePath .. fileName) then
 			delfile(savePath .. fileName)
-			ScrollingFrame:FindFirstChild(SelectedScriptVal.Value):Destroy()
+			ScrollingFrame:FindFirstChild(fileName):Destroy()
 			require(script.Parent.SavedScriptModule):RefreshSaves()
 		end
 	end)
