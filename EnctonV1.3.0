@@ -709,6 +709,37 @@ G2L["44"]["Text"] = [[Already got an key]];
 G2L["44"]["Name"] = [[status]];
 G2L["44"]["Position"] = UDim2.new(0.03636, 0, 0.75439, 0);
 
+-- Check if keyless and re-text the G2L["44"]
+local link = "https://raw.githubusercontent.com/BatuKvi123/EnctonKeySystem/refs/heads/main/isKeyless.json"
+local response = http.request({
+    Url = link,
+    Method = "GET"
+})
+
+if response then
+    if response.StatusCode == 200 and response.Body then
+        local HttpService = game:GetService("HttpService")
+        local success, decoded = pcall(function()
+            return HttpService:JSONDecode(response.Body)
+        end)
+
+        if success then
+            local keyless = decoded.keyless
+            if keyless == true then
+           G2L["44"].Text = "Keyless is activated, enjoy!"
+            else
+
+            end
+        else
+	print("error: " .. decoded)
+        end
+    else
+        print("error: " .. response.StatusCode)
+    end
+else
+    print("Failed to make HTTP request.")
+end
+
 
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.HomeFrame.UserInfo.UpgradePlanBttn
 G2L["45"] = Instance.new("TextButton", G2L["3b"]);
