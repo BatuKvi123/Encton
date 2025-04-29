@@ -791,7 +791,7 @@ G2L["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["49"]["BackgroundTransparency"] = 1;
 G2L["49"]["Size"] = UDim2.new(0, 200, 0, 20);
 G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Text"] = [[Key Status:]];
+G2L["49"]["Text"] = [[Key Status]];
 G2L["49"]["Name"] = [[KeyStatusus]];
 G2L["49"]["Position"] = UDim2.new(0.03636, 0, 0.57895, 0);
 
@@ -827,6 +827,10 @@ G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4c"]["Text"] = [[Discord]];
 G2L["4c"]["Position"] = UDim2.new(0.5, 0, 0.35088, 0);
 
+G2L["4c"].MouseButton1Click:Connect(function()
+setclipboard("https://discord.gg/BSNkUE2jSy")
+end)
+
 
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.HomeFrame.Socials.DiscordBttn.UICorner
 G2L["4d"] = Instance.new("UICorner", G2L["4c"]);
@@ -860,6 +864,10 @@ G2L["50"]["Name"] = [[YoutubeBttn]];
 G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["50"]["Text"] = [[Youtube]];
 G2L["50"]["Position"] = UDim2.new(0.5, 0, 0.64035, 0);
+
+G2L["50"].MouseButton1Click:Connect(function()
+setclipboard("https://youtube.com/@enctonexecutor?si=wYD1ejsZbzBSTsdo")
+end)
 
 
 -- StarterGui.EnctonV1.3.0_Fixes.MainFrame.HomeFrame.Socials.YoutubeBttn.UICorner
